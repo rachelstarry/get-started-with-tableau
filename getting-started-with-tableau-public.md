@@ -1,28 +1,66 @@
 # Getting started with Tableau Public
 
-Tableau is a powerful data visualization tool, in heavy use among both laypeople and data professionals.
+Tableau is a powerful data visualization tool, popular among both everyday users and data professionals.
 
-Tableau Public is the free version of this tool. There are several things to be aware of with regard to Tableau Public. It's free to download and use, but, aside from screenshots, the only way to share Tableau Public visualizations is to publish them to the Tableau Public website. That means they will be freely available on the web, and you will need to create a Tableau account in order to do this.
+Tableau Public is the free version of this tool; this tutorial was created using version 2019.1. There are several things to be aware of with regard to Tableau Public. It's free to download and use, but, aside from screenshots, the only way to save and share Tableau Public visualizations is to publish them to the Tableau Public website. That means they will be freely available on the web, and you will need to create a Tableau account in order to do this. Each Tableau Public user is allotted 10GB of space to store and share Tableau visualizations.
 
-However, you do not need to create an account in order to use Tableau Public. We will use it today to make two charts, which we'll combine into a dashboard. [Here is a preview of what we'll make.](https://public.tableau.com/profile/miriam.posner#!/vizhome/IowaArtsGrants2015/Dashboard1?publish=yes) At the end of this tutorial, you'll find information on how to publish it to the web. For this exercise, you will need the Iowa Arts Council Grants data CSV file, which you can download at [this link](https://www.dropbox.com/s/lhanmm3v9ylccgz/Iowa_Arts_Council_Grants.csv?dl=0).
+We will use Tableau Public to make several charts, which we will combine into a dashboard and a "story" that can be shared with a link or embedded on a webpage. [Here is a preview of what we'll make.](https://public.tableau.com/profile/miriam.posner#!/vizhome/IowaArtsGrants2015/Dashboard1?publish=yes) At the end of this tutorial, you'll find information on how to publish your Tableau workbook to the web. For this exercise, you will need two data files, both from [Gapminder Tools](https://www.gapminder.org/). 
+* 
 
-## 1. Choose your data source
+## 1. Import and prepare your data
 
-After opening Tableau, you're presented with a list of file types you can choose to work with ("connect"). Even though our Iowa Arts Council Grants file *opens* in Excel, it's saved as a CSV. To Tableau, a CSV is a text file. So select **Text file.** Then navigate to the file you downloaded earlier and double-click to open it.
+After opening Tableau, you're presented with a list of file types you can choose to work with ("connect"). Both of our data files are .xlsx files, so select **Microsoft Excel.** Then navigate to the file named **en_atm_co2e_pc.xlsx** you downloaded earlier and double-click to open it.
 
 ![][1]
 
 [1]: images/getting-started-with-tableau-public/choose-your-data-source.png
 
-## 2. Create a sheet
+### 1.0 - Connect to the first data file
 
-Tableau will open your file. It should look pretty familiar! In Tableau, you begin visualizing data by creating a **Sheet**. Do that by clicking on the orange **Sheet** button in the lower left-hand corner.
+Tableau will connect to your file. Under "Connections" in the left sidebar, you should see the name of the file you opened, and below, under Sheets, you should see a list of all the sheets inside this Excel file (in this case, there is only one sheet). You will see a preview of this sheet in the lower pane of the main Data Source window. The Excel file is called a "Connection" because Tableau is not really opening the file - it is opening a temporary copy of it; this means that you will not make any changes to your original data files when you open them in Tableau.
+
+### 1.1 - Add column names
+
+The column headers have been automatically generated, but we can see that the first row in the spreadsheet contains our column headers. So click on the arrow next to the name of the file in the main Data Source window to open a drop-down menu and select **"Field names are in first row."** Now the column headers reflect the fact that our data consists of one column called "country" and many columns representing the CO2 emissions in metric tons per capita, for the years 1960 to 2014.
 
 ![][2]
 
 [2]: images/getting-started-with-tableau-public/create-a-sheet.png
 
-## 3. Data types in Tableau
+### 1.2 - Connect to the second data file
+
+We have another Excel file that has additional information for each of the countries in our first file (the one with data on CO2 emissions). Let's open that one now. In the left sidebar, next to "Connections," click **Add** to add a second connector. Since our second file is also an Excel file, select **Microsoft Excel** and navigate to the file named **DataGeographies_v1_byGapminder.xlsx** that you downloaded earlier.
+
+### 1.3 - Join the two spreadsheets
+
+Now under "Connections," you will see both files, and if you select the Data Geographies file you just opened you will see several sheets inside (listed under "Sheets" in the sidebar). The one we want is called **list-of-countries-etc**. Drag list-of-countries-etc to the upper pane of the Data Source window, where the name of the first data connection is displayed. Tableau will recognize that you want to join these two datasets together. There are several options for joining, but we want to perform a **Full Outer** join to keep all the columns from both datasets. Click on **Full Outer** and under "Data Source" scroll down to select **country**, and under "list-of-countries-etc" select **Name**. "Name" is the field that contains the name of the country in our second spreadsheet, and we want to join our two spreadsheets by country name.
+
+### 1.4 - Pivot the year columns
+
+In the lower pane of the Data Source window, you should now see a preview of our newly joined dataset! Use the scroll bars to see all of the columns in this new spreadsheet. In order to create visualizations of this data, we will need all of the year columns to be stacked or collapsed from "wide" to "long" format. To do this, click on the **1960** column and then scroll over and Shift + click on the **2014** column to select all the year columns. Next, click the arrow at the top of the **2014** column and select **"Pivot**. 
+
+By pivoting all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"**. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**.
+
+### 1.5 - Hide a redundant column
+
+Notice that when we told Tableau to join our two datasets by the "country" and "Name" columns (which both hold the name of a country), Tableau kept both columns. To remove the redundant "Name" column, right-click on the **"Name"** column and select **"Hide"**. This will hide this redundant column from view.
+
+### 1.6 - Export the joined dataset
+
+Because Tableau connects to data files instead of directly opening them, when we make changes - such as joining two tables as we just did - we will need to save the changes. To do this, select **Data** on the navigation menu and click **"Export Data to CSV"**. Save the csv with the filename **"joined_co2_geography.csv"**. At this point, we will need to re-open this newly saved csv file, so go ahead and close the active Tableau workbook by selecting **File** --> **Close** from the navigation menu.
+
+
+## 2. Create your first visualization
+
+### 2.0 - Connect to the joined dataset
+
+...
+
+
+
+
+
+
 
 Tableau divides your content types (that is, your columns) into **dimensions** and **measures**. Measures consist of numeric information: values that can be added together. Everything else is a dimension. Tableau will often provide recommendations based on these data types.
 
