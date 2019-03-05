@@ -38,7 +38,7 @@ Now under "Connections," you will see both files, and if you select the Data Geo
 
 ### 1.4 - Pivot the year columns
 
-In the lower pane of the Data Source window, you should now see a preview of our newly joined dataset! Use the scroll bars to see all of the columns in this new spreadsheet. In order to create visualizations of this data, we will need all of the year columns to be stacked or collapsed from "wide" to "long" format. To do this, click on the **1960** column and then scroll over and Shift + click on the **2014** column to select all of the year columns. Next, click the arrow at the top of the **2014** column and select **"Pivot**. 
+In the lower pane of the Data Source window, you should now see a preview of our newly joined dataset! Use the scroll bars to see all of the columns in this new spreadsheet. In order to create visualizations of this data, we will need all of the year columns to be stacked or collapsed from "wide" to "long" format. To do this, click on the **1960** column and then scroll over and Shift + click on the **2014** column to select all of the year columns. Next, click the arrow at the top of the **2014** column and select **"Pivot"**. 
 
 By telling Tableau to pivot all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"** since it now stores all the years that were previously used as column headers. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**, as this column now stores the CO2 emission values by year for each country.
 
@@ -70,7 +70,7 @@ In our dataset, we have **10 dimensions** and **3 measures** present in our actu
 
 You may notice that most of our dimensions are coded in Tableau as blue - their icons are blue and a blue bubble appears around the names of the dimensions. Most of the measures, however, are green. This is because Tableau indicates **discrete data** using the color blue and **continuous data** using the color green. Discrete (also known as categorical or qualitative) data has values that are divided into discrete categories or classes, whereas continuous (also known as sequential or continuously varying) data has values that can be found anywhere within a range of possible values, such as the numbers from zero to a million.
 
-While most dimensions are discrete and most measures are continuous, this may not be the case 100% of the time. In our dataset, the Year column, which is a dimension, is green because the Year values fall into a range (in this case, between 1960 and 2014).
+While **most dimensions are discrete** and **most measures are continuous**, this may not be the case 100% of the time. In our dataset, the Year column, which is a dimension, is green because the Year values fall into a numeric range (in this case, between 1960 and 2014).
 
 ### 2.3 - 
 
