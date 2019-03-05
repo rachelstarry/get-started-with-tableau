@@ -26,7 +26,7 @@ Tableau will connect to your file. Under "Connections" in the left sidebar, you 
 
 ### 1.1 - Add column names
 
-The column headers have been automatically generated, but we can see that the first row in the spreadsheet contains our column headers. So click on the arrow next to the name of the file in the main Data Source window to open a drop-down menu and select **"Field names are in first row."** Now the column headers reflect the fact that our data consists of one column called "country" and many columns representing the CO2 emissions in metric tons per capita, for the years 1960 to 2014.
+Column headers will be automatically generated, but we can see that the first row in the spreadsheet actually contains our column names. To fix this, click on the arrow next to the name of the file in the upper pane of the Data Source window to open a drop-down menu, and select **"Field names are in first row."** Now the column headers reflect the fact that our data consists of one column called "country" and many columns representing the CO2 emissions in metric tons per capita for each country, for the years 1960 to 2014.
 
 ### 1.2 - Connect to the second data file
 
@@ -34,40 +34,73 @@ We have another Excel file that has additional information for each of the count
 
 ### 1.3 - Join the two spreadsheets
 
-Now under "Connections," you will see both files, and if you select the Data Geographies file you just opened you will see several sheets inside (listed under "Sheets" in the sidebar). The one we want is called **list-of-countries-etc**. Drag list-of-countries-etc to the upper pane of the Data Source window, where the name of the first data connection is displayed. Tableau will recognize that you want to join these two datasets together. There are several options for joining, but we want to perform a **Full Outer** join to keep all the columns from both datasets. Click on **Full Outer** and under "Data Source" scroll down to select **country**, and under "list-of-countries-etc" select **Name**. "Name" is the field that contains the name of the country in our second spreadsheet, and we want to join our two spreadsheets by country name.
+Now under "Connections," you will see both files, and if you select the Data Geographies file you just opened, you will see several sheets inside (listed under "Sheets" in the sidebar). The one we want is called **list-of-countries-etc**. Drag **list-of-countries-etc** to the upper pane of the Data Source window, where the name of the first data connection is displayed. Tableau will recognize that you want to join these two datasets together. There are several options for joining, but we want to perform a **Full Outer** join to keep ALL the columns from both datasets. Click on **Full Outer** to indicate that we want to do a full outer join of our two datasets. Then, under "Data Source," scroll down to select **country** and under "list-of-countries-etc" select **Name**. "Name" is the field that contains the name of the country in our second spreadsheet, and we want to match up our two spreadsheets using the field that contains each country's name.
 
 ### 1.4 - Pivot the year columns
 
-In the lower pane of the Data Source window, you should now see a preview of our newly joined dataset! Use the scroll bars to see all of the columns in this new spreadsheet. In order to create visualizations of this data, we will need all of the year columns to be stacked or collapsed from "wide" to "long" format. To do this, click on the **1960** column and then scroll over and Shift + click on the **2014** column to select all the year columns. Next, click the arrow at the top of the **2014** column and select **"Pivot**. 
+In the lower pane of the Data Source window, you should now see a preview of our newly joined dataset! Use the scroll bars to see all of the columns in this new spreadsheet. In order to create visualizations of this data, we will need all of the year columns to be stacked or collapsed from "wide" to "long" format. To do this, click on the **1960** column and then scroll over and Shift + click on the **2014** column to select all of the year columns. Next, click the arrow at the top of the **2014** column and select **"Pivot**. 
 
-By pivoting all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"**. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**.
+By telling Tableau to pivot all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"** since it now stores all the years that were previously used as column headers. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**, as this column now stores the CO2 emission values by year for each country.
 
 ### 1.5 - Hide a redundant column
 
-Notice that when we told Tableau to join our two datasets by the "country" and "Name" columns (which both hold the name of a country), Tableau kept both columns. To remove the redundant "Name" column, right-click on the **"Name"** column and select **"Hide"**. This will hide this redundant column from view.
+Notice that when we told Tableau to join our two datasets by the "country" and "Name" columns (which both hold the country names), Tableau kept both columns. To remove the redundant "Name" column, right-click on the **"Name"** column and select **"Hide"**. This will hide this redundant column from view.
 
 ### 1.6 - Export the joined dataset
 
-Because Tableau connects to data files instead of directly opening them, when we make changes - such as joining two tables as we just did - we will need to save the changes. To do this, select **Data** on the navigation menu and click **"Export Data to CSV"**. Save the csv with the filename **"joined_co2_geography.csv"**. At this point, we will need to re-open this newly saved csv file, so go ahead and close the active Tableau workbook by selecting **File** --> **Close** from the navigation menu.
+Because Tableau *connects* to data files instead of directly opening them, when we make changes - such as joining two tables as we just did - we will need to save the changes explicitly. To do this, select **Data** on the navigation menu and click **"Export Data to CSV"**. Save the csv with the filename **"joined_co2_geography.csv"**. At this point, we will need to re-open this newly saved csv file, so go ahead and close the active Tableau workbook by selecting **File** --> **Close** from the navigation menu.
 
+------
 
 ## 2. Create your first visualization
 
 ### 2.0 - Connect to the joined dataset
 
-...
+You should now be back on the Tableau Public home screen. (If you aren't, go up to **File** in the navigation menu and click **"Show Start Page"**.) This time, instead of opening Excel files, we will need to open a csv (or comma separated values) file. This is a kind of text file, so select **"Text file"** and open the **"joined_co2_geography.csv"** that you created earlier.
+
+### 2.1 - Dimensions and measures
+
+Tableau should recognize that the column headers are stored in the first row of our dataset, but if not, repeat **Step 1.1** as described above. At the bottom of the left sidebar, you should see a summary of all the pages you have open in your current Tableau Public workbook. Right now, you should just see **Data Source** and **Sheet 1**. Click over to **Sheet 1** now.
+
+Tableau divides the fields in your dataset (that is, your columns) into **dimensions** and **measures**. Measures are fields whose values *measure* some attribute of your data (these are always numeric), while dimensions are fields whose values *describe* some attribute of your data (these can be categories, geographical or temporal scales, or other types of variables that do not measure a quantity).
+
+In our dataset, we have **10 dimensions** and **3 measures** present in our actual spreadsheet, and Tableau has also calculated a few additional dimensions (such as "Measure Names") and additional measures (such as "Number of Records" and "Measure Values"). These automatically calculated dimensions and measures are distinguished by their italicized names.
+
+### 2.2 - Discrete and continuous data
+
+You may notice that most of our dimensions are coded in Tableau as blue - their icons are blue and a blue bubble appears around the names of the dimensions. Most of the measures, however, are green. This is because Tableau indicates **discrete data** using the color blue and **continuous data** using the color green. Discrete (also known as categorical or qualitative) data has values that are divided into discrete categories or classes, whereas continuous (also known as sequential or continuously varying) data has values that can be found anywhere within a range of possible values, such as the numbers from zero to a million.
+
+While most dimensions are discrete and most measures are continuous, this may not be the case 100% of the time. In our dataset, the Year column, which is a dimension, is green because the Year values fall into a range (in this case, between 1960 and 2014).
+
+### 2.3 - 
+
+------
+
+## 3. Customize your visualization
+
+------
+
+## 4. Create another chart
+
+------
+
+## 5. Create a dashboard with multiple charts
+
+------
+
+## 6. Add interactivity and format your dashboard
+
+------
+
+## 7. Create a Tableau story
+
+------
+
+## 8. Export and share your visualizations
 
 
 
 
-
-
-
-Tableau divides your content types (that is, your columns) into **dimensions** and **measures**. Measures consist of numeric information: values that can be added together. Everything else is a dimension. Tableau will often provide recommendations based on these data types.
-
-![][3]
-
-[3]: images/getting-started-with-tableau-public/data-types-in-tableau.png
 
 ## 4. Your first visualization
 
