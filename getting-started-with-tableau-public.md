@@ -16,13 +16,13 @@ We will use Tableau Public to make several charts, which we will combine into a 
 
 ## 1. Import and prepare your data
 
-After opening Tableau, you're presented with a list of file types you can choose to work with ("connect"). Both of our data files are .xlsx files, so select **Microsoft Excel.** Then navigate to the file named **en_atm_co2e_pc.xlsx** you downloaded earlier and double-click to open it.
+After opening Tableau, you're presented with a list of file types you can choose to work with ("Connect"). Both of our data files are .xlsx files, so select **Microsoft Excel.** Then navigate to the file named **en_atm_co2e_pc.xlsx** you downloaded earlier and double-click to open it.
 
 
 
 ### 1.0 - Connect to the first data file
 
-Tableau will connect to your file. Under "Connections" in the left sidebar, you should see the name of the file you opened, and below, under Sheets, you should see a list of all the sheets inside this Excel file (in this case, there is only one sheet). You will see a preview of this sheet in the lower pane of the main Data Source window. The Excel file is called a "Connection" because Tableau is not really opening the file - it is opening a temporary copy of it; this means that you will not make any changes to your original data files when you open them in Tableau.
+Tableau will connect to your file. Under "Connections" in the left sidebar, you should see the name of the file you opened, and below, under "Sheets," you should see a list of all the sheets inside this Excel file (in this case, there is only one sheet). You will see a preview of this sheet in the lower pane of the main Data Source window. The Excel file is called a "Connection" because Tableau is not really opening the file - it is opening a temporary copy of it; this means that you will not make any changes to your original data files when you open them in Tableau.
 
 ### 1.1 - Add column names
 
