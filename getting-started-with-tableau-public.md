@@ -116,11 +116,12 @@ Notice that when we told Tableau to join our two datasets by the "country" and "
 
 Because Tableau *connects* to data files instead of directly opening them, when we make changes - such as joining two tables as we just did - we will need to save the changes explicitly. To do this, select **Data** on the navigation menu and click **"Export Data to CSV"**. Save the csv with the filename **"joined_co2_geography.csv"**. At this point, we will need to re-open this newly saved csv file, so go ahead and close the active Tableau workbook by selecting **File** --> **Close** from the navigation menu.
 
+<br>
+
 ------
 
 ## 2. Create your first visualization
 
-<br>
 
 ### 2.0 - Connect to the joined dataset
 
@@ -158,15 +159,110 @@ While **most dimensions are discrete** and **most measures are continuous**, thi
 
 <br>
 
-### 2.3 - 
+### 2.3 - Data types
+
+You may also notice that there are a variety of symbols next to each of our dimensions and measures. The **globe** symbol next to "Country," as well as "Latitude" and "Longitude," represents spatial data, and the pound sign **#** next to "Year" and "CO2 per capita" represent numeric data. There are additional types of data, such as text (represented by **"Abc"**) and date (represented by a **calendar** symbol).
+
+<br>
+
+### 2.4 - Make a map
+
+It's time to create our first visualization! All it takes to create a visualization in Tableau is to drag-and-drop one or more of our fields (that is - our dimensions and measures) onto the canvas. Try dragging **"Country"** from Dimensions onto the middle of the blank canvas area in **Sheet 1**. Because "Country" is spatial data, Tableau knows to create a map. It's as easy as that!
+
+![][16]
+
+[16]: initial-map.png
+
+<br>
+
+### 2.5 - Add a measure to the map
+
+A dot is added to the map for each country in our dataset. This isn't very helpful, so let's add another field that will tell Tableau how large each dot on the map should be. Try dragging **"CO2 per capita"** from Measures onto the map. Because "CO2 per capita" is a measure, Tableau knows to resize the points on the map (also known as "marks") with this measure. 
+
+<br>
+
+### 2.6 - Give the sheet a name
+
+Sheet 1 now contains a visualization, so it's a good idea to give the sheet a name so you will be able to distinguish it from other visualizations, once you have created more than one in your Tableau workbook. Right-click on **"Sheet 1"** and select **Rename** - you can give your visualizations any name you want, but let's keep it simple and call this sheet **"Map"**.
+
+![][17]
+
+[17]: rename-sheet.png
+
+<br>
 
 ------
 
 ## 3. Customize your visualization
 
+
+### 3.0 - Customize the map marks
+
+Now that you have a visualization, you can customize it in many ways. Notice that in between the left sidebar (where our data fields are displayed) and the main canvas, there is a set of panes labeled "Pages", "Filters", and "Marks". We want to look at the **"Marks"** pane right now. Notice that when we added **CO2 per capita** to the map, Tableau assumed that we wanted to view the SUM of CO2 emissions for each country, since our dataset includes CO2 emissions across many years. You can click on the arrow next to **"SUM(CO2 per capita)"** in the Marks pane to see the other kinds of calculations Tableau can perform when you ask it to display a measure, such as Average, Median, or Maximum. For now, we want to visualize the total CO2 emissions per capita for each country in our dataset, so leave or reset the calculation to SUM.
+
+![][18]
+
+[18]: map-co2-marks.png
+
+<br>
+
+### 3.1 - Edit dot size
+
+Inside the **Marks** pane, click on **Size**. The dots on our map are fairly small - let's make them all larger and easier to see by dragging the Size slider to the right a bit, as shown.
+
+![][19]
+
+[19]: marks-size.png
+
+<br>
+
+### 3.2 - Edit dot color
+
+We can also change the color of the dots on the map to reflect the intensity of CO2 emissions per capita for each country. In general, the human brain can better distinguish between color contrasts than between relative sizes of circles, so adding a color scale to our dots will make the map easier to read. To color the dots based on total CO2 emissions, drag **"CO2 per capita"** from Measures to the **Color** box inside the **Marks** pane.
+
+![][20]
+
+[20]: marks-color.png
+
+To the right of the canvas, Tableau displays the legends for your visualization. You may have to minimize the **"Show Me"** toolbar (at the top right corner of the Tableau window) in order to see the legends. A legend was added for the size of the dots, and now there is also a legend for the color scale. We can customize this color scale by clicking on **Color** inside the **Marks** pane. Select **"Edit Colors..."** to select a different color scale. In the pop-up window, scroll down to select the **"Temperature Diverging"** color palette, and click OK. You may also want to make the dots on the map slightly transparent since at some zoom levels, the dots overlap each other. (In the example shown, **80% opacity** has been selected.)
+
+![][21]
+
+[21]: marks-color-scale-opacity.png
+
+<br>
+
+### 3.3 - Change the chart title
+
+While "Map" is a useful name for our sheet, you may want to have a more descriptive title for your visualization. To edit the chart title, right-click on the title **"Map"** above the canvas, and select **"Edit title..."**.
+
+![][22]
+
+[22]: chart-title-edit.png
+
+In the pop-up window, give your map a new title and click OK.
+
+![][23]
+
+[23]: chart-title-custom.png
+
+<br>
+
 ------
 
 ## 4. Create another chart
+
+### 4.0 - Create a new worksheet
+
+Now let's create another visualization. At the bottom of the Tableau window, click on the **"New Worksheet"** button to create a new sheet.
+
+![][24]
+
+[24]: new-worksheet.png
+
+<br>
+
+### 4.1 - 
 
 ------
 
@@ -178,11 +274,7 @@ While **most dimensions are discrete** and **most measures are continuous**, thi
 
 ------
 
-## 7. Create a Tableau story
-
-------
-
-## 8. Export and share your visualizations
+## 7. Export and share your visualizations
 
 
 
