@@ -104,7 +104,9 @@ You should now be back on the Tableau Public home screen. (If you aren't, go up 
 
 ![][13]
 
-[13]: 
+[13]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/open-textfile.png
+
+<br>
 
 ### 2.1 - Dimensions and measures
 
@@ -116,13 +118,21 @@ Tableau should recognize that the column headers are stored in the first row of 
 
 Tableau divides the fields in your dataset (that is, your columns) into **dimensions** and **measures**. Measures are fields whose values *measure* some attribute of your data (these are always numeric), while dimensions are fields whose values *describe* some attribute of your data (these can be categories, geographical or temporal scales, or other types of variables that do not measure a quantity).
 
+![][15]
+
+[15]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dimensions-measures.png
+
 In our dataset, we have **10 dimensions** and **3 measures** present in our actual spreadsheet, and Tableau has also calculated a few additional dimensions (such as "Measure Names") and additional measures (such as "Number of Records" and "Measure Values"). These automatically calculated dimensions and measures are distinguished by their italicized names.
+
+<br>
 
 ### 2.2 - Discrete and continuous data
 
 You may notice that most of our dimensions are coded in Tableau as blue - their icons are blue and a blue bubble appears around the names of the dimensions. Most of the measures, however, are green. This is because Tableau indicates **discrete data** using the color blue and **continuous data** using the color green. Discrete (also known as categorical or qualitative) data has values that are divided into discrete categories or classes, whereas continuous (also known as sequential or continuously varying) data has values that can be found anywhere within a range of possible values, such as the numbers from zero to a million.
 
 While **most dimensions are discrete** and **most measures are continuous**, this may not be the case 100% of the time. In our dataset, the Year column, which is a dimension, is green because the Year values fall into a numeric range (in this case, between 1960 and 2014).
+
+<br>
 
 ### 2.3 - 
 
