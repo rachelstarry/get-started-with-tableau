@@ -42,15 +42,43 @@ Column headers will be automatically generated, but we can see that the first ro
 
 We have another Excel file that has additional information for each of the countries in our first file (the one with data on CO2 emissions). Let's open that one now. In the left sidebar, next to "Connections," click **Add** to add a second connector. Since our second file is also an Excel file, select **Microsoft Excel** and navigate to the file named **DataGeographies_v1_byGapminder.xlsx** that you downloaded earlier.
 
+![][6]
+
+[6]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/add-connector.png
+
 ### 1.3 - Join the two spreadsheets
 
-Now under "Connections," you will see both files, and if you select the Data Geographies file you just opened, you will see several sheets inside (listed under "Sheets" in the sidebar). The one we want is called **list-of-countries-etc**. Drag **list-of-countries-etc** to the upper pane of the Data Source window, where the name of the first data connection is displayed. Tableau will recognize that you want to join these two datasets together. There are several options for joining, but we want to perform a **Full Outer** join to keep ALL the columns from both datasets. Click on **Full Outer** to indicate that we want to do a full outer join of our two datasets. Then, under "Data Source," scroll down to select **country** and under "list-of-countries-etc" select **Name**. "Name" is the field that contains the name of the country in our second spreadsheet, and we want to match up our two spreadsheets using the field that contains each country's name.
+Now under "Connections," you will see both files, and if you select the Data Geographies file you just opened, you will see several sheets inside (listed under "Sheets" in the sidebar). The one we want is called **list-of-countries-etc**. 
+
+![][7]
+
+[7]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/second-sheet.png
+
+Drag **list-of-countries-etc** to the upper pane of the Data Source window, where the name of the first data connection is displayed. Tableau will recognize that you want to join these two datasets together. There are several options for joining, but we want to perform a **Full Outer** join to keep ALL the columns from both datasets. Click on **Full Outer** to indicate that we want to do a full outer join of our two datasets. 
+
+![][8]
+
+[8]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/fulljoin.png
+
+Then, under "Data Source," scroll down to select **country** and under "list-of-countries-etc" select **Name**. "Name" is the field that contains the name of the country in our second spreadsheet, and we want to match up our two spreadsheets using the field that contains each country's name.
+
+![][9]
+
+[9]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/country-equals-name.png
 
 ### 1.4 - Pivot the year columns
 
 In the lower pane of the Data Source window, you should now see a preview of our newly joined dataset! Use the scroll bars to see all of the columns in this new spreadsheet. In order to create visualizations of this data, we will need all of the year columns to be stacked or collapsed from "wide" to "long" format. To do this, click on the **1960** column and then scroll over and Shift + click on the **2014** column to select all of the year columns. Next, click the arrow at the top of the **2014** column and select **"Pivot"**. 
 
+![][10]
+
+[10]:
+
 By telling Tableau to pivot all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"** since it now stores all the years that were previously used as column headers. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**, as this column now stores the CO2 emission values by year for each country.
+
+![][11]
+
+[11]:
 
 ### 1.5 - Hide a redundant column
 
