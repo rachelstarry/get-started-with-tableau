@@ -171,7 +171,7 @@ It's time to create our first visualization! All it takes to create a visualizat
 
 ![][16]
 
-[16]: initial-map.png
+[16]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/initial-map.png
 
 <br>
 
@@ -187,7 +187,7 @@ Sheet 1 now contains a visualization, so it's a good idea to give the sheet a na
 
 ![][17]
 
-[17]: rename-sheet.png
+[17]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/rename-sheet.png
 
 <br>
 
@@ -202,7 +202,7 @@ Now that you have a visualization, you can customize it in many ways. Notice tha
 
 ![][18]
 
-[18]: map-co2-marks.png
+[18]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/map-co2-marks.png
 
 <br>
 
@@ -212,7 +212,7 @@ Inside the **Marks** pane, click on **Size**. The dots on our map are fairly sma
 
 ![][19]
 
-[19]: marks-size.png
+[19]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/marks-size.png
 
 <br>
 
@@ -222,13 +222,13 @@ We can also change the color of the dots on the map to reflect the intensity of 
 
 ![][20]
 
-[20]: marks-color.png
+[20]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/marks-color.png
 
 To the right of the canvas, Tableau displays the legends for your visualization. You may have to minimize the **"Show Me"** toolbar (at the top right corner of the Tableau window) in order to see the legends. A legend was added for the size of the dots, and now there is also a legend for the color scale. We can customize this color scale by clicking on **Color** inside the **Marks** pane. Select **"Edit Colors..."** to select a different color scale. In the pop-up window, scroll down to select the **"Temperature Diverging"** color palette, and click OK. You may also want to make the dots on the map slightly transparent since at some zoom levels, the dots overlap each other. (In the example shown, **80% opacity** has been selected.)
 
 ![][21]
 
-[21]: marks-color-scale-opacity.png
+[21]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/marks-color-scale-opacity.png
 
 <br>
 
@@ -238,13 +238,13 @@ While "Map" is a useful name for our sheet, you may want to have a more descript
 
 ![][22]
 
-[22]: chart-title-edit.png
+[22]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/chart-title-edit.png
 
 In the pop-up window, give your map a new title and click OK.
 
 ![][23]
 
-[23]: chart-title-custom.png
+[23]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/chart-title-custom.png
 
 <br>
 
@@ -258,7 +258,7 @@ Now let's create another visualization. At the bottom of the Tableau window, cli
 
 ![][24]
 
-[24]: new-worksheet.png
+[24]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/new-worksheet.png
 
 <br>
 
