@@ -181,7 +181,7 @@ A dot is added to the map for each country in our dataset. This isn't very helpf
 
 ![][16b]
 
-[16b]: 
+[16b]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/map-sized.png
 
 
 <br>
