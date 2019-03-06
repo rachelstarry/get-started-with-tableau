@@ -1,3 +1,5 @@
+<link href="https://github.com/rachelstarry/getting-started-with-tableau/blob/master/css/basic.css" rel="stylesheet"></link>
+
 # Getting started with Tableau Public
 
 Tableau is a powerful data visualization tool, popular among both everyday users and data professionals.
@@ -72,21 +74,29 @@ In the lower pane of the Data Source window, you should now see a preview of our
 
 ![][10]
 
-[10]:
+[10]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/pivot.png
 
 By telling Tableau to pivot all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"** since it now stores all the years that were previously used as column headers. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**, as this column now stores the CO2 emission values by year for each country.
 
 ![][11]
 
-[11]:
+[11]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/pivot-rename.png
 
 ### 1.5 - Hide a redundant column
 
 Notice that when we told Tableau to join our two datasets by the "country" and "Name" columns (which both hold the country names), Tableau kept both columns. To remove the redundant "Name" column, right-click on the **"Name"** column and select **"Hide"**. This will hide this redundant column from view.
 
+![][12]
+
+[12]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/hide-name-column.png
+
 ### 1.6 - Export the joined dataset
 
 Because Tableau *connects* to data files instead of directly opening them, when we make changes - such as joining two tables as we just did - we will need to save the changes explicitly. To do this, select **Data** on the navigation menu and click **"Export Data to CSV"**. Save the csv with the filename **"joined_co2_geography.csv"**. At this point, we will need to re-open this newly saved csv file, so go ahead and close the active Tableau workbook by selecting **File** --> **Close** from the navigation menu.
+
+![][13]
+
+[13]:
 
 ------
 
