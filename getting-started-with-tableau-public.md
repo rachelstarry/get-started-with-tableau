@@ -18,15 +18,25 @@ We will use Tableau Public to make several charts, which we will combine into a 
 
 After opening Tableau, you're presented with a list of file types you can choose to work with ("Connect"). Both of our data files are .xlsx files, so select **Microsoft Excel.** Then navigate to the file named **en_atm_co2e_pc.xlsx** you downloaded earlier and double-click to open it.
 
+![][3]
 
+[3]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/connect.png
 
 ### 1.0 - Connect to the first data file
 
 Tableau will connect to your file. Under "Connections" in the left sidebar, you should see the name of the file you opened, and below, under "Sheets," you should see a list of all the spreadsheets inside this Excel file (in this case, there is only one sheet). You will see a preview of this sheet in the lower pane of the main Data Source window. This preview of our Excel file is called a "connection" because Tableau is not really opening the file - it is opening a copy of it; this means that you will not make any changes to your original data files when you open them in Tableau.
 
+![][4]
+
+[4]:https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/connection-preview.png
+
 ### 1.1 - Add column names
 
 Column headers will be automatically generated, but we can see that the first row in the spreadsheet actually contains our column names. To fix this, click on the arrow next to the name of the file in the upper pane of the Data Source window to open a drop-down menu, and select **"Field names are in first row."** Now the column headers reflect the fact that our data consists of one column called "country" and many columns representing the CO2 emissions in metric tons per capita for each country, for the years 1960 to 2014.
+
+![][5]
+
+[5]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/field-names.png
 
 ### 1.2 - Connect to the second data file
 
