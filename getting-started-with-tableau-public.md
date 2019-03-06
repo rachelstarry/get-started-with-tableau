@@ -14,6 +14,8 @@ We will use Tableau Public to make several charts, which we will combine into a 
 [1]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/en_atm_co2e_pc.xlsx
 [2]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/DataGeographies_v1_byGapminder.xlsx
 
+<br>
+
 ------
 
 ## 1. Import and prepare your data
@@ -24,6 +26,8 @@ After opening Tableau, you're presented with a list of file types you can choose
 
 [3]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/connect.png
 
+<br>
+
 ### 1.0 - Connect to the first data file
 
 Tableau will connect to your file. Under "Connections" in the left sidebar, you should see the name of the file you opened, and below, under "Sheets," you should see a list of all the spreadsheets inside this Excel file (in this case, there is only one sheet). You will see a preview of this sheet in the lower pane of the main Data Source window. This preview of our Excel file is called a "connection" because Tableau is not really opening the file - it is opening a copy of it; this means that you will not make any changes to your original data files when you open them in Tableau.
@@ -31,6 +35,8 @@ Tableau will connect to your file. Under "Connections" in the left sidebar, you 
 ![][4]
 
 [4]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/connection-preview.png
+
+<br>
 
 ### 1.1 - Add column names
 
@@ -40,6 +46,8 @@ Column headers will be automatically generated, but we can see that the first ro
 
 [5]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/field-names.png
 
+<br>
+
 ### 1.2 - Connect to the second data file
 
 We have another Excel file that has additional information for each of the countries in our first file (the one with data on CO2 emissions). Let's open that one now. In the left sidebar, next to "Connections," click **Add** to add a second connector. Since our second file is also an Excel file, select **Microsoft Excel** and navigate to the file named **DataGeographies_v1_byGapminder.xlsx** that you downloaded earlier.
@@ -47,6 +55,8 @@ We have another Excel file that has additional information for each of the count
 ![][6]
 
 [6]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/add-connector.png
+
+<br>
 
 ### 1.3 - Join the two spreadsheets
 
@@ -56,17 +66,23 @@ Now under "Connections," you will see both files, and if you select the Data Geo
 
 [7]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/second-sheet.png
 
+<br>
+
 Drag **list-of-countries-etc** to the upper pane of the Data Source window, where the name of the first data connection is displayed. Tableau will recognize that you want to join these two datasets together. There are several options for joining, but we want to perform a **Full Outer** join to keep ALL the columns from both datasets. Click on **Full Outer** to indicate that we want to do a full outer join of our two datasets. 
 
 ![][8]
 
 [8]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/fulljoin.png
 
+<br>
+
 Then, under "Data Source," scroll down to select **country** and under "list-of-countries-etc" select **Name**. "Name" is the field that contains the name of the country in our second spreadsheet, and we want to match up our two spreadsheets using the field that contains each country's name.
 
 ![][9]
 
 [9]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/country-equals-name.png
+
+<br>
 
 ### 1.4 - Pivot the year columns
 
@@ -76,11 +92,15 @@ In the lower pane of the Data Source window, you should now see a preview of our
 
 [10]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/pivot.png
 
+<br>
+
 By telling Tableau to pivot all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"** since it now stores all the years that were previously used as column headers. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**, as this column now stores the CO2 emission values by year for each country.
 
 ![][11]
 
 [11]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/pivot-rename.png
+
+<br>
 
 ### 1.5 - Hide a redundant column
 
@@ -90,6 +110,8 @@ Notice that when we told Tableau to join our two datasets by the "country" and "
 
 [12]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/hide-name-column.png
 
+<br>
+
 ### 1.6 - Export the joined dataset
 
 Because Tableau *connects* to data files instead of directly opening them, when we make changes - such as joining two tables as we just did - we will need to save the changes explicitly. To do this, select **Data** on the navigation menu and click **"Export Data to CSV"**. Save the csv with the filename **"joined_co2_geography.csv"**. At this point, we will need to re-open this newly saved csv file, so go ahead and close the active Tableau workbook by selecting **File** --> **Close** from the navigation menu.
@@ -97,6 +119,8 @@ Because Tableau *connects* to data files instead of directly opening them, when 
 ------
 
 ## 2. Create your first visualization
+
+<br>
 
 ### 2.0 - Connect to the joined dataset
 
