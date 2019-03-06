@@ -22,7 +22,7 @@ After opening Tableau, you're presented with a list of file types you can choose
 
 ![][3]
 
-[3]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/connect.png
+[3]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/connect.png
 
 ### 1.0 - Connect to the first data file
 
@@ -30,7 +30,7 @@ Tableau will connect to your file. Under "Connections" in the left sidebar, you 
 
 ![][4]
 
-[4]:https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/connection-preview.png
+[4]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/connection-preview.png
 
 ### 1.1 - Add column names
 
@@ -38,7 +38,7 @@ Column headers will be automatically generated, but we can see that the first ro
 
 ![][5]
 
-[5]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/field-names.png
+[5]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/field-names.png
 
 ### 1.2 - Connect to the second data file
 
@@ -46,7 +46,7 @@ We have another Excel file that has additional information for each of the count
 
 ![][6]
 
-[6]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/add-connector.png
+[6]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/add-connector.png
 
 ### 1.3 - Join the two spreadsheets
 
@@ -54,19 +54,19 @@ Now under "Connections," you will see both files, and if you select the Data Geo
 
 ![][7]
 
-[7]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/second-sheet.png
+[7]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/second-sheet.png
 
 Drag **list-of-countries-etc** to the upper pane of the Data Source window, where the name of the first data connection is displayed. Tableau will recognize that you want to join these two datasets together. There are several options for joining, but we want to perform a **Full Outer** join to keep ALL the columns from both datasets. Click on **Full Outer** to indicate that we want to do a full outer join of our two datasets. 
 
 ![][8]
 
-[8]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/fulljoin.png
+[8]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/fulljoin.png
 
 Then, under "Data Source," scroll down to select **country** and under "list-of-countries-etc" select **Name**. "Name" is the field that contains the name of the country in our second spreadsheet, and we want to match up our two spreadsheets using the field that contains each country's name.
 
 ![][9]
 
-[9]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/country-equals-name.png
+[9]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/country-equals-name.png
 
 ### 1.4 - Pivot the year columns
 
@@ -74,13 +74,13 @@ In the lower pane of the Data Source window, you should now see a preview of our
 
 ![][10]
 
-[10]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/pivot.png
+[10]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/pivot.png
 
 By telling Tableau to pivot all the year columns, you've created two new columns, which are automatically named **Pivot Field Names** and **Pivot Field Values**. Right-click on the column header for **Pivot Field Names** and select **"Rename"** - we want this column to be called **"Year"** since it now stores all the years that were previously used as column headers. Do the same thing to rename **Pivot Field Values** to **"CO2 per capita"**, as this column now stores the CO2 emission values by year for each country.
 
 ![][11]
 
-[11]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/pivot-rename.png
+[11]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/pivot-rename.png
 
 ### 1.5 - Hide a redundant column
 
@@ -88,15 +88,11 @@ Notice that when we told Tableau to join our two datasets by the "country" and "
 
 ![][12]
 
-[12]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/getting-started-with-tableau-public/hide-name-column.png
+[12]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/hide-name-column.png
 
 ### 1.6 - Export the joined dataset
 
 Because Tableau *connects* to data files instead of directly opening them, when we make changes - such as joining two tables as we just did - we will need to save the changes explicitly. To do this, select **Data** on the navigation menu and click **"Export Data to CSV"**. Save the csv with the filename **"joined_co2_geography.csv"**. At this point, we will need to re-open this newly saved csv file, so go ahead and close the active Tableau workbook by selecting **File** --> **Close** from the navigation menu.
-
-![][13]
-
-[13]:
 
 ------
 
@@ -106,9 +102,17 @@ Because Tableau *connects* to data files instead of directly opening them, when 
 
 You should now be back on the Tableau Public home screen. (If you aren't, go up to **File** in the navigation menu and click **"Show Start Page"**.) This time, instead of opening Excel files, we will need to open a csv (or comma separated values) file. This is a kind of text file, so select **"Text file"** and open the **"joined_co2_geography.csv"** that you created earlier.
 
+![][13]
+
+[13]: 
+
 ### 2.1 - Dimensions and measures
 
 Tableau should recognize that the column headers are stored in the first row of our dataset, but if not, repeat **Step 1.1** as described above. At the bottom of the left sidebar, you should see a summary of all the pages you have open in your current Tableau Public workbook. Right now, you should just see **Data Source** and **Sheet 1**. Click over to **Sheet 1** now.
+
+![][14]
+
+[14]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/open-csv-sheet1.png
 
 Tableau divides the fields in your dataset (that is, your columns) into **dimensions** and **measures**. Measures are fields whose values *measure* some attribute of your data (these are always numeric), while dimensions are fields whose values *describe* some attribute of your data (these can be categories, geographical or temporal scales, or other types of variables that do not measure a quantity).
 
