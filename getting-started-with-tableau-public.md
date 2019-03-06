@@ -267,7 +267,45 @@ Now let's create another visualization. At the bottom of the Tableau window, cli
 
 <br>
 
-### 4.1 - 
+### 4.1 - Create a line chart
+
+Now that we have a map that visualizes the total CO2 emissions across the globe, we might want to create a chart that visualizes how the amount of CO2 emissions per capita changed across time. Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can create with particular kinds of data. To do this, Ctrl + click on the dimensions and measures you want to add to the chart - in this case, Ctrl + click on both **"Year"** under Dimensions and **"CO2 per capita"** under Measures. In the **Show Me** toolbar, charts that you can make with these two fields will be highlighted. Click on the picture of the **line chart** in the Show Me toolbar, and Tableau will generate a chart with the data from the selected fields.
+
+![][25]
+
+[25]: line-chart.png
+
+<br>
+
+### 4.2 - Add details to the line chart
+
+When we selected "Year" and "CO2 per capita" to create the line chart, Tableau again automatically performed a SUM calculation to display the total CO2 emissions per year for all countries. If we want to see the breakdown of individual countries' CO2 emissions, we can drag the **"Country"** field from Dimensions onto the line chart. Now, in the **Marks** pane, "Country" appears as a **detail** in the line chart, and a line for each country's emissions appears on the chart. 
+
+![][26]
+
+[26]: country-detail.png
+
+While we could leave the chart like this and color-code the lines by country, our dataset includes information on region for each country. Since there are fewer regions than countries, using one of our region dimensions may make the line chart more readable. Let's remove "Country" by clicking on the arrow next to **"Country"** in the **Marks** pane.
+
+![][27]
+
+[27]: remove-country.png
+
+Drag the dimension **"World bank region"** to the line chart to add this field as a detail on the chart. Tableau will automatically color-code the lines for CO2 emissions by each region. There are several other region dimensions with different numbers of regions included in our dataset. Go ahead and explore them to see how the line chart appears when visualizing these different details!
+
+![][28]
+
+[28]: region-detail.png
+
+### 4.3 - Remove null value from legend
+
+Once you've added regions to the chart, you can continue to customize the size and color of the lines by repeating the process from **Step 3.1** and **Step 3.2** above, if you'd like. You can also rename your worksheet and add a custom chart title. You may notice that in the legend to the right of the chart window, there is a **Null** value present. This means that there is a blank cell in our "World bank region" column - Tableau interprets empty cells as null values. We don't want to include this missing value in the chart, so click on **"Null"** in the legend and select **"Exclude"**. This will remove the null value from the chart and the legend.
+
+![][28]
+
+[28]: remove-null.png
+
+<br>
 
 ------
 
@@ -285,93 +323,9 @@ Now let's create another visualization. At the bottom of the Tableau window, cli
 
 
 
-## 4. Your first visualization
 
-Get started by clicking on **Applicant Arts Discipline** and drag it into the main section of the sheet (the **canvas**). It's not hugely exciting; you just see a list of arts disciplines.
 
-There's a reason for that: Tableau doesn't know what you want it to count.
 
-![][4]
-
-[4]: images/getting-started-with-tableau-public/your-first-visualization.png
-
-## 5. Tell Tableau which measure to use
-
-We want Tableau to create a chart that visualizes the number of grants awarded per arts discipline. As we did when we used Excel to create a Pivot table, we want Tableau to summarize the values.
-
-Luckily, Tableau has done this for us. Scroll to the bottom of the Data column, and look at the measure types that are in italics. You'll see that they contain the word **generated** next to them in parentheses. This means that these are numbers that Tableau has calculated for you.
-
-You'll notice a measure called **Number of Records**. Since each record corresponds to a grant, that's the one we want. Click on this measure and drag it to the table on your canvas. Drop it in the second column of the table, where the values are currently represented as "Abc."
-
-![][5]
-
-[5]: images/getting-started-with-tableau-public/tell-tableau-which-measure-to-use.png
-
-## 6. Choose the chart type you want
-
-Once you've dropped the "Number of Records" measure, you'll see that they're nicely summarized for you in the table you created. You'll also notice that highlighted options appear in the palette of chart types on the right-hand side of your window. Now that you have measures, you have some chart options! Click on the bar chart.
-
-![][6]
-
-[6]: images/getting-started-with-tableau-public/choose-the-chart-type-you-want.png
-
-## 7. Compare multiple values
-
-You created a visualization! Now, let's see if we can create a stacked bar chart, the way we did with Excel. We'll show how **Application Instition Type** correlates with **Application Arts Discipline**.
-
-Luckily, this is easy. Just drag the Application Institution Type measure onto the bar chart you've already created.
-
-![][7]
-
-[7]: images/getting-started-with-tableau-public/compare-multiple-values.png
-
-## 8. Create a stacked bar chart
-
-Now, let's switch to a stacked bar chart, so we can see the distinctions among institution types more clearly. You'll notice that as you hover over each segment, a tooltip gives you more information.
-
-![][8]
-
-[8]: images/getting-started-with-tableau-public/create-a-stacked-bar-chart.png
-
-## 9. Give your chart a name
-
-Click on your chart's title (it currently reads **Sheet 1**) to give it a more descriptive name.
-
-![][9]
-
-[9]: images/getting-started-with-tableau-public/give-your-chart-a-name.png
-
-## 10. Start a new chart
-
-Now let's make our second chart. Click on the **New worksheet** button (circled below) to begin our new visualization.
-
-![][10]
-
-[10]: images/getting-started-with-tableau-public/start-a-new-chart.png
-
-## 11. Make a map
-
-Tableau has automatically geocoded our geographic dimensions. You can tell because a tiny globe appears next to them. Drag **County** into the main canvas area, and give Tableau a moment to work.
-
-![][11]
-
-[11]: images/getting-started-with-tableau-public/make-a-map.png
-
-## 12. You have a map!
-
-Now that you've done a map, let's add a measure to it. Drag **Number of Records** into the main canvas area, on top of your map.
-
-![][12]
-
-[12]: images/getting-started-with-tableau-public/you-have-a-map-.png
-
-## 13. Finish your map
-
-Now the circles on your map grow larger as the number of grants awarded to that county increases. You can fine-tune the look of your map by altering the options in the **Marks window**. Give your new map a title, as you did for your chart.
-
-![][13]
-
-[13]: images/getting-started-with-tableau-public/finish-your-map.png
 
 ## 14. Create a dashboard
 
