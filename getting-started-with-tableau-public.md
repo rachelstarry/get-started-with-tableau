@@ -161,7 +161,7 @@ While **most dimensions are discrete** and **most measures are continuous**, thi
 
 ### 2.3 - Data types
 
-You may also notice that there are a variety of symbols next to each of our dimensions and measures. The **globe** symbol next to "Country," as well as "Latitude" and "Longitude," represents spatial data, and the pound sign **#** next to "Year" and "CO2 per capita" represent numeric data. There are additional types of data, such as text (represented by **"Abc"**) and date (represented by a **calendar** symbol).
+You may also notice that there are a variety of symbols next to each of our dimensions and measures. The **globe** symbol next to "Country," as well as "Latitude" and "Longitude," indicates spatial data, and the pound sign **#** next to "Year" and "CO2 per capita" represents numeric data. There are additional types of data, such as text (represented by **"Abc"**) and date (represented by a **calendar** symbol).
 
 <br>
 
@@ -178,6 +178,11 @@ It's time to create our first visualization! All it takes to create a visualizat
 ### 2.5 - Add a measure to the map
 
 A dot is added to the map for each country in our dataset. This isn't very helpful, so let's add another field that will tell Tableau how large each dot on the map should be. Try dragging **"CO2 per capita"** from Measures onto the map. Because "CO2 per capita" is a measure, Tableau knows to resize the points on the map (also known as "marks") with this measure. 
+
+![][16b]
+
+[16b]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/map-sized.png
+
 
 <br>
 
