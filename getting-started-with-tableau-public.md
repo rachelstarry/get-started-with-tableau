@@ -509,7 +509,7 @@ Go ahead and add a chart title as well! At the very bottom of the left sidebar, 
 
 ## 8. Export and share your visualizations
 
-To save and share your visualizations or dashboard, you will need to have a Tableau account so that you can save your workbook to your public Tableau profile. To publish your workbook, make sure you have your dashboard open (or whichever sheet or dashboard you want to be visible when someone views your workbook), and in the navigation menu select **"File"** -> **"Save to Tableau Public As..."**. Give your workbook a name, and click **Save**. A browser window should open automatically and take you to the public view of your workbook.
+To save and share your visualizations or dashboard, you will need to have a Tableau account so that you can save your workbook to your public Tableau profile. To publish your workbook, make sure you have your dashboard open (or whichever sheet or dashboard you want to be visible when someone views your workbook), and in the navigation menu select **"File"** --> **"Save to Tableau Public As..."**. Give your workbook a name, and click **Save**. A browser window should open automatically and take you to the public view of your workbook.
 
 ![][48]
 
