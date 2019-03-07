@@ -519,7 +519,7 @@ To save and share your visualizations or dashboard, you will need to have a Tabl
 
 If you have not already created an account or logged into Tableau, you will be prompted to begin this process when you select **Save**. You can choose whether or not to make your workbooks publicly visible. [Follow the instructions in this article][save] if you would like to learn how to make your visualizations private or save workbooks locally to your computer.
 
-There's a *ton* more you can do with Tableau. You can begin learning about its other features [here](https://public.tableau.com/en-us/s/resources).
+There's a *ton* more you can do with Tableau. You can begin learning about its other features [here](https://public.tableau.com/en-us/s/resources)!
 
 [save]: https://www.olgatsubiks.com/single-post/2017/03/20/How-to-save-Tableau-Public-workbooks-privately-on-your-computer
 
