@@ -439,7 +439,7 @@ Since the bar chart has horizontal bars, there is a lot of wasted space below it
 
 ### 6.6 - Resize dashboard tiles
 
-Now head back to your dashboard. The column chart fits much better on the right-hand side of the dashboard! You can eliminate the rest of the empty space by hovering over the borders between the visualizations on the dashboard until the double-arrow cursor appears. Then click and drag to resize your bar chart so there is no extra white-space in the dashboard.
+Now head back to your dashboard. The column chart fits much better on the right-hand side of the dashboard! You can eliminate the rest of the empty space by hovering over the borders between the visualizations on the dashboard until the **double-arrow cursor** appears. Then click and drag to resize your bar chart so there is no extra white-space in the dashboard.
 
 ![][41]
 
@@ -451,7 +451,9 @@ Now head back to your dashboard. The column chart fits much better on the right-
 
 ## 7. Add interactivity and format your dashboard
 
-### 7.1 - 
+### 7.1 - Make the map a filter for the line chart
+
+The dashboard is already looking pretty good! We can add to its interactivity by 
 
 ------
 
