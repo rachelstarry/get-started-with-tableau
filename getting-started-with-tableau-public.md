@@ -269,7 +269,9 @@ Now let's create another visualization. At the bottom of the Tableau window, cli
 
 ### 4.1 - Create a line chart
 
-Now that we have a map that visualizes the total CO2 emissions across the globe, we might want to create a chart that visualizes how the amount of CO2 emissions per capita changed over time. Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can create with particular kinds of data. To do this, Ctrl + click on the dimensions and measures you want to add to the chart - in this case, Ctrl + click on both **"Year"** under Dimensions and **"CO2 per capita"** under Measures. In the **Show Me** toolbar, charts that you can make with these two fields will be highlighted. Click on the picture of the **line chart** in the Show Me toolbar, and Tableau will generate a chart with the data from the selected fields.
+Now that we have created a map that visualizes the total CO2 emissions across the globe, we might want to create a chart to complement our map that visualizes how the amount of CO2 emissions per capita changed over time. 
+
+Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can create with particular kinds of data. To do this, Ctrl + click on the dimensions and measures you want to add to the chart - in this case, Ctrl + click on both **"Year"** under Dimensions and **"CO2 per capita"** under Measures. In the **Show Me** toolbar, charts that you can make with these two fields will be highlighted. Click on the picture of the **line chart** in the Show Me toolbar, and Tableau will generate a chart with the data from the selected fields.
 
 ![][25]
 
@@ -277,7 +279,7 @@ Now that we have a map that visualizes the total CO2 emissions across the globe,
 
 <br>
 
-### 4.2 - Add details to the line chart
+### 4.2 - Add a detail to the line chart
 
 When we selected "Year" and "CO2 per capita" to create the line chart, Tableau again automatically performed a SUM calculation to display the total CO2 emissions per year for all countries. If we want to see the breakdown of individual countries' CO2 emissions, we can drag the **"Country"** field from Dimensions onto the line chart. Now, in the **Marks** pane, "Country" appears as a **detail** in the line chart, and a line for each country's emissions appears on the chart. 
 
@@ -285,27 +287,31 @@ When we selected "Year" and "CO2 per capita" to create the line chart, Tableau a
 
 [26]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/country-detail.png
 
-We could leave the chart like this and color-code the lines by country, but remember that our dataset also includes information on region for each country. Since there are fewer regions than countries, using one of our region dimensions may make the line chart more readable. Let's remove "Country" by clicking on the arrow next to **"Country"** in the **Marks** pane.
+Notice that again, by default, Tableau assumes that we want to visualize the SUM of CO2 emissions, but since each line represents a single country's values over time, there is no need to add the values together. What we really want is for Tableau to simply use the **"CO2 per capita"** values themselves. To do this, click on the arrow next to **"CO2 per capita"** in the **Rows** pane above the canvas, and select **"Attribute"** instead of "Measure(SUM)". While in this case, this small change doesn't make a difference in the way our line chart is drawn, for other datasets you will often want to visualize a measure directly, rather than performing a calculation on it first.
 
 ![][27]
 
-[27]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/remove-country.png
-
-Drag the dimension **"World bank region"** to the line chart to add this field as a detail on the chart. Tableau will automatically color-code the lines for CO2 emissions by each region. There are several other region dimensions with different numbers of regions included in our dataset. Go ahead and explore them to see how the line chart appears when visualizing these different details!
-
-![][28]
-
-[28]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/region-detail.png
-
-### 4.3 - Remove null value from legend
-
-Once you've added regions to the chart, you can continue to customize the size and color of the lines by repeating the process from **Step 3.1** and **Step 3.2** above, if you'd like. You can also rename your worksheet and add a custom chart title. You may notice that in the legend to the right of the chart window, there is a **Null** value present. This means that there is a blank cell in our "World bank region" column - Tableau interprets empty cells as null values. We don't want to include this missing value in the chart, so click on **"Null"** in the legend and select **"Exclude"**. This will remove the null value from the chart and the legend.
-
-![][28]
-
-[28]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/remove-null.png
+[27]: change-measure-to-attribute.png
 
 <br>
+
+### 4.3 - Edit the line colors
+
+Since both the map and the line chart visualize CO2 emission values, we may want to use the same color palette for both. Tell Tableau to color-code the lines according to each country's CO2 emissions, by dragging **"CO2 per capita"** from **Measures** to the **Color** box on the **Marks** pane, or directly onto the line chart canvas. Tableau will now use this measure to color the lines on the chart. Again, while it won't affect this particular chart, if you want to visualize actual values rather than a SUM or another calculation, you'll also need to change this for the color detail of **"CO2 per capita"** in the **Marks** pane.
+
+To make the colors of our line chart match the map, click on **Color** in the **Marks** pane and edit the color palette, selecting the **Temperature Diverging** palette we used for the map, as in **Step 3.2** above. To ensure that Tableau uses the full color range from green to red, in the **Edit Colors** pop-up window, check the box that says **"Use Full Color Range"**.
+
+![][28]
+
+[28]: full-color-range.png
+
+<br>
+
+### 4.4 - Finish customizing the line chart
+
+
+
+
 
 ------
 
