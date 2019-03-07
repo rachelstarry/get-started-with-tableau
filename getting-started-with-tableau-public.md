@@ -315,9 +315,7 @@ Finish customizing your line chart by renaming the sheet and the chart title, as
 
 ------
 
-## 5. Create one last chart
-
-### 5.0 - Create a bar chart
+## 5. Create a bar chart
 
 Now that we've walked through creating visualizations in two different ways - by dragging and dropping dimensions or measures directly onto a blank canvas ([**Step 2.4**][step24]) and by using the **Show Me** toolbar ([**Step 4.1**][step41]) - it's your turn to experiment! 
 
@@ -451,14 +449,79 @@ Now head back to your dashboard. The column chart fits much better on the right-
 
 ## 7. Add interactivity and format your dashboard
 
-### 7.1 - Make the map a filter for the line chart
+### 7.0 - Make the map a filter for the line chart
 
-The dashboard is already looking pretty good! We can add to its interactivity by 
+The dashboard is already looking pretty good! We can add to its interactivity by linking the map and line chart with a filter; this means that when a user clicks on a point on one chart, the relevant data point on another chart will be isolated. Let's make the map a filter for our line chart. To do this, click on the map in your dashboard and select the **funnel icon** on the chart manipulation tools, as shown below.
+
+![][42]
+
+[42]: map-as-filter.png
+
+<br>
+
+### 7.1 - Remove interactivity from the bar chart
+
+Test out the interactivity: if you click on a map point, such as Qatar (the country with the highest total CO2 emissions per capita) the other charts in the dashboard automatically update to show the relevant information for that country. Click again to de-select a specific country. 
+
+While we want the line chart to update, we don't necessarily want the stacked bar chart to update when users interact with the map. To tell the bar chart not to update, click on it and in the drop-down menu for **"More Options"**, select **"Ignore Actions"**. Now try interacting with the map; the bar chart should no longer update when you click on different countries.
+
+![][43]
+
+[43]: ignore-actions.png
+
+<br>
+
+### 7.1 - Freeze the line chart Y axis
+
+You may notice that as you click on different countries on the map, whenever the line chart updates, Tableau re-draws the Y axis to scale, depending on the CO2 emission values for any given country. Using a different scale for the Y axis for each country doesn't allow users to consistently compare the data across countries, so we want to freeze the Y axis so that it uses the same scale no matter which country's data is visible. To do this, right-click on the line chart's Y axis and select **"Edit Axis..."**. 
+
+![][44]
+
+[44]: edit-axis.png
+
+In the pop-up window that appears, under **"Range"** select **"Fixed"** and then close out of the pop-up window (you do not need to click anywhere else to save this setting). Now when the line chart is re-drawn to display different countries' CO2 emissions, the Y axis will remain at the original scale.
+
+![][45]
+
+[45]: edit-axis-fixed.png
+
+<br>
+
+### 7.3 - Add blank space and a dashboard title
+
+It is possible to create very elaborate dashboards by incorporating text boxes, images, and other multimedia elements by dragging items from the **Objects** section at the bottom of the left sidebar. Experiment with these components by dragging them onto your dashboard; you can undo any action by clicking the **Undo** button on the icon toolbar or clicking **Ctrl + z**. 
+
+For now, we can make our dashboard slightly more readable by adding a tiny bit of blank space between our charts, so there is more of a boundary between them. Under **Objects**, drag **Blank** to the canvas until the grey highlighted area is located between the map and line chart, then release your cursor. A blank tile is now located between the two visualizations. Resize the map and line chart until there is only a small blank area between them. 
+
+![][46]
+
+[46]: add-blank.png
+
+You can also add a blank area between the bar chart and the two charts on the left side of the dashboard. These blank areas help visually separate each of the charts in our dashboard. 
+
+Go ahead and add a chart title as well! At the very bottom of the left sidebar, check the box that says **"Show dashboard title"**. Then rename the dashboard title in the same way you renamed chart titles, by right-clicking on it. You can format the text of the dashboard title; in the example shown, the words "CO2 Emissions" have been made bold and red.
+
+![][47]
+
+[47]: add-title.png
+
+<br>
 
 ------
 
 ## 8. Export and share your visualizations
 
+To save and share your visualizations or dashboard, you will need to have a Tableau account so that you can save your workbook to your public Tableau profile. To publish your workbook, make sure you have your dashboard open (or whichever sheet or dashboard you want to be visible when someone views your workbook), and in the navigation menu select **"File"** -> **"Save to Tableau Public As..."**. Give your workbook a name, and click **Save**. A browser window should open automatically and take you to the public view of your workbook.
+
+![][48]
+
+[48]: save-as.png
+
+If you have not already created an account or logged into Tableau, you will be prompted to begin this process when you select **Save**. You can choose whether or not to make your workbooks publicly visible. [Follow the instructions in this article][save] if you would like to learn how to make your visualizations private or save workbooks locally to your computer.
+
+There's a *ton* more you can do with Tableau. You can begin learning about its other features [here](https://public.tableau.com/en-us/s/resources).
+
+[save]: https://www.olgatsubiks.com/single-post/2017/03/20/How-to-save-Tableau-Public-workbooks-privately-on-your-computer
 
 <br>
 
@@ -471,27 +534,4 @@ The dashboard is already looking pretty good! We can add to its interactivity by
 3. Drag **"Country"** from under Dimensions to the **Color** box on the **Marks** pane.
 4. Rename the sheet to **"Bar Chart"** and rename the chart title to **"Total CO2 emissions by world region"**. 
 
-
-
-
-
-
-
-
-## 15. Drag your sheets onto your dashboard
-
-From the left-hand side of your dashboard's window, click on each of your sheets in turn and drag them into your main canvas. Very nice!
-
-![][15]
-
-[15]: images/getting-started-with-tableau-public/drag-your-sheets-onto-your-dashboard.png
-
-## 16. Options for exporting
-
-As I've mentioned, in order to make your visualization web-accessible, you will need to create a Tableau account and publish to Tableau's site. From there, you can embed your visualizations in other web pages. To begin this process, select **Save to Tableau Public As...** from the **File** menu. You will be prompted to begin the process of creating an account, logging in, and publishing to the web.
-
-There's a *ton* more you can do with Tableau. You can begin learning about its other features [here](https://public.tableau.com/en-us/s/resources).
-
-![][16]
-
-[16]: images/getting-started-with-tableau-public/options-for-exporting.png
+<br>
