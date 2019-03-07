@@ -12,7 +12,6 @@ We will use Tableau Public to make several charts, which we will combine into a 
 * ![DataGeographies_v1_byGapminder.xlsx][2] (additional data for the 195 countries in the Gapminder dataset)
 
 [1]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/en_atm_co2e_pc.xlsx
-[2]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/DataGeographies_v1_byGapminder.xlsx
 
 <br>
 
@@ -309,15 +308,17 @@ To make the colors of our line chart match the map, click on **Color** in the **
 
 ### 4.4 - Finish customizing the line chart
 
+Finish customizing your line chart by renaming the sheet and the chart title, as in **Step 2.6** and **Step 3.3** above.
 
-
-
+<br>
 
 ------
 
 ## 5. Create one last chart
 
-### 5.0 - ...
+### 5.0 - Create a bar chart
+
+Now that we've walked through creating visualizations in two different ways - by dragging and dropping dimensions and measures directly onto a blank canvas (**Step 2.4**) and by using the **Show Me** toolbar (**Step 4.1**) - it's your turn! Start by creating a new worksheet. This time, we want to create a bar chart that visualizes 
 
 ------
 
