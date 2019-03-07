@@ -1,12 +1,10 @@
-<link href="https://github.com/rachelstarry/getting-started-with-tableau/blob/master/css/basic.css" rel="stylesheet"></link>
-
 # Getting started with Tableau Public
 
 Tableau is a powerful data visualization tool, popular among both everyday users and data professionals.
 
 Tableau Public is the free version of this tool; this tutorial was created using Tableau Public version 2019.1. There are several things to be aware of with regard to Tableau Public. It's free to download and use, but, aside from screenshots, the only way to save and share Tableau Public visualizations is to publish them to the Tableau Public website. That means they will be freely available on the web, and you will need to create a Tableau account in order to do this. Each Tableau Public user is allotted 10GB of space to store and share Tableau visualizations.
 
-We will use Tableau Public to make several charts, which we will combine into a dashboard that can be shared with a link or embedded on a webpage. [Here is a preview of what we'll make.](https://public.tableau.com/profile/miriam.posner#!/vizhome/IowaArtsGrants2015/Dashboard1?publish=yes) At the end of this tutorial, you'll find information on how to publish your Tableau workbook to the web. For this exercise, you will need two data files, both from [Gapminder Tools](https://www.gapminder.org/). 
+We will use Tableau Public to make several charts, which we will combine into a dashboard that can be shared with a link or embedded on a webpage. [Here is a preview of what we'll make.](https://public.tableau.com/profile/rachel.starry#!/vizhome/GettingStartedGuide/GlobalCO2Emissionspercapita) At the end of this tutorial, you'll find information on how to publish your Tableau workbook to the web. For this exercise, you will need two data files, both from [Gapminder Tools](https://www.gapminder.org/). 
 
 * ![en_atm_co2e_pc.xlsx][1] (CO2 emissions in metric tons per capita)
 * ![DataGeographies_v1_byGapminder.xlsx][2] (additional data for the 195 countries in the Gapminder dataset)
