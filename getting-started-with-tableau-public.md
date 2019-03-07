@@ -12,6 +12,7 @@ We will use Tableau Public to make several charts, which we will combine into a 
 * ![DataGeographies_v1_byGapminder.xlsx][2] (additional data for the 195 countries in the Gapminder dataset)
 
 [1]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/en_atm_co2e_pc.xlsx
+[2]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/DataGeographies_v1_byGapminder.xlsx
 
 <br>
 
@@ -318,7 +319,15 @@ Finish customizing your line chart by renaming the sheet and the chart title, as
 
 ### 5.0 - Create a bar chart
 
-Now that we've walked through creating visualizations in two different ways - by dragging and dropping dimensions and measures directly onto a blank canvas (**Step 2.4**) and by using the **Show Me** toolbar (**Step 4.1**) - it's your turn! Start by creating a new worksheet. This time, we want to create a bar chart that visualizes 
+Now that we've walked through creating visualizations in two different ways - by dragging and dropping dimensions or measures directly onto a blank canvas (**Step 2.4**) and by using the **Show Me** toolbar (**Step 4.1**) - it's your turn to experiment! Start by creating a new worksheet. This time, we want to create a **stacked bar chart** that visualizes the **total CO2 emissions per capita** for each of the **World bank regions**, colored by all the countries in each region.
+
+Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color using the Marks pane earlier (in **Step 3.2** and **Step 4.3**). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.]()
+
+The image below shows the finished visualization.
+
+![][29]
+
+[29]: full-color-range.png
 
 ------
 
@@ -333,7 +342,13 @@ Now that we've walked through creating visualizations in two different ways - by
 ## 8. Export and share your visualizations
 
 
+<br>
 
+------
+
+#### Steps to create the bar chart for **Step 5.0**:
+
+* 
 
 
 
