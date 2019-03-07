@@ -273,7 +273,7 @@ Now that we have a map that visualizes the total CO2 emissions across the globe,
 
 ![][25]
 
-[25]: line-chart.png
+[25]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/line-chart.png
 
 <br>
 
@@ -283,19 +283,19 @@ When we selected "Year" and "CO2 per capita" to create the line chart, Tableau a
 
 ![][26]
 
-[26]: country-detail.png
+[26]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/country-detail.png
 
 While we could leave the chart like this and color-code the lines by country, our dataset includes information on region for each country. Since there are fewer regions than countries, using one of our region dimensions may make the line chart more readable. Let's remove "Country" by clicking on the arrow next to **"Country"** in the **Marks** pane.
 
 ![][27]
 
-[27]: remove-country.png
+[27]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/remove-country.png
 
 Drag the dimension **"World bank region"** to the line chart to add this field as a detail on the chart. Tableau will automatically color-code the lines for CO2 emissions by each region. There are several other region dimensions with different numbers of regions included in our dataset. Go ahead and explore them to see how the line chart appears when visualizing these different details!
 
 ![][28]
 
-[28]: region-detail.png
+[28]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/region-detail.png
 
 ### 4.3 - Remove null value from legend
 
@@ -303,7 +303,7 @@ Once you've added regions to the chart, you can continue to customize the size a
 
 ![][28]
 
-[28]: remove-null.png
+[28]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/remove-null.png
 
 <br>
 
