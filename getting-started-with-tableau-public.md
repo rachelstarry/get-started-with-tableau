@@ -287,7 +287,7 @@ When we selected "Year" and "CO2 per capita" to create the line chart, Tableau a
 
 [26]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/country-detail.png
 
-Notice that again, by default, Tableau assumes that we want to visualize the SUM of CO2 emissions, but since each line represents a single country's values over time, there is no need to add the values together. What we really want is for Tableau to simply use the **"CO2 per capita"** values themselves. To do this, click on the arrow next to **"CO2 per capita"** in the **Rows** pane above the canvas, and select **"Attribute"** instead of "Measure(SUM)". While in this case, this small change doesn't make a difference in the way our line chart is drawn, for other datasets you will often want to visualize a measure directly, rather than performing a calculation on it first.
+Notice that again, by default, Tableau assumes that we want to visualize the SUM of CO2 emissions, but since each line represents a single country's values over time, there is no need to add values together. What we really want is for Tableau to simply use the **"CO2 per capita"** values themselves. To do this, click on the arrow next to **"CO2 per capita"** in the **Rows** pane above the canvas, and select **"Attribute"** instead of "Measure(SUM)". While in this instance, this change doesn't make a difference in the way our line chart is drawn, for other datasets you will often want to visualize a measure directly, rather than performing a calculation on it first.
 
 ![][27]
 
@@ -321,7 +321,7 @@ Finish customizing your line chart by renaming the sheet and the chart title, as
 
 Now that we've walked through creating visualizations in two different ways - by dragging and dropping dimensions or measures directly onto a blank canvas (**Step 2.4**) and by using the **Show Me** toolbar (**Step 4.1**) - it's your turn to experiment! Start by creating a new worksheet. This time, we want to create a **stacked bar chart** that visualizes the **total CO2 emissions per capita** for each of the **World bank regions**, colored by all the countries in each region.
 
-Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color using the Marks pane earlier (in **Step 3.2** and **Step 4.3**). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.]()
+Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color using the Marks pane earlier (in **Step 3.2** and **Step 4.3**). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#steps-to-create-the-bar-chart-for-step-50)
 
 The image below shows the finished visualization.
 
