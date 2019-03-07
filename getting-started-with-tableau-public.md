@@ -351,7 +351,7 @@ Start by clicking the **New Dashboard** button at the bottom of the Tableau wind
 
 ![][30]
 
-[30]: new-dashboard.png
+[30]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/new-dashboard.png
 
 <br>
 
@@ -361,7 +361,7 @@ The first thing you'll want to do when creating a dashboard is decide whether yo
 
 ![][31]
 
-[31]: resize-automatic.png
+[31]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/resize-automatic.png
 
 <br>
 
@@ -373,7 +373,7 @@ Try it now by dragging **Map** to the blank canvas. Tableau automatically fills 
 
 ![][32]
 
-[32]: dashboard-map-only.png
+[32]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-map-only.png
 
 <br>
 
@@ -383,13 +383,13 @@ We also want to add the line chart to this dashboard. If you click and drag **Li
 
 ![][33]
 
-[33]: dashboard-add-line-chart.png
+[33]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-add-line-chart.png
 
 The line chart should now appear in the lower half of the dashboard, and its legend has also been added to the right-hand side of the dashboard, under the map legends.
 
 ![][34]
 
-[34]: dashboard-map-line-chart.png
+[34]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-map-line-chart.png
 
 <br>
 
@@ -399,19 +399,19 @@ The legends for the map don't add much in terms of readability, so we can remove
 
 ![][35]
 
-[35]: dashboard-remove-legend.png
+[35]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-remove-legend.png
 
 Do the same for the other map legend (the **"CO2 per capita"** legend whose scale reads 0 to 2985). We should keep the legend for the line chart, however, since we will want users to be able to see the range of total CO2 emissions for each country when they interact with the line chart. It is possible to move legends around by making them **floating legends**. Do this by clicking on the **"More Options"** arrow that appears next to the legend after you've clicked on it, and selecting **"Floating"**. 
 
 ![][36]
 
-[36]: dashboard-legend-options.png
+[36]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-legend-options.png
 
 Now you can use the grey bar that appears on top of the legend to move it around your dashboard. Move it down so it appears closer to the line chart, as shown below.
 
 ![][37]
 
-[37]: dashboard-with-legend.png
+[37]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-with-legend.png
 
 <br>
 
@@ -421,19 +421,19 @@ Now let's add the bar chart to the right half of the dashboard. Click and drag *
 
 ![][38]
 
-[38]: dashboard-add-bar-chart.png
+[38]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-add-bar-chart.png
 
 Tableau will add the bar chart as well as its legend to the right side of the dashboard. Move the **"CO2 per capita"** legend so it's on top of the line chart again, and remove the **"Country"** legend for the bar chart, since we don't need to include that in the dashboard (users can hover over the bar chart to see country information).
 
 ![][39]
 
-[39]: dashboard-bar-chart-legends.png
+[39]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-bar-chart-legends.png
 
 Since the bar chart has horizontal bars, there is a lot of wasted space below it on the dashboard. Tableau makes it easy to turn horizontal bar charts into vertical column charts by swapping the rows and columns. To do this, switch back to the **Bar Chart** worksheet. Under the navigation menu is a toolbar with lots of icons. You'll want to click the **"Swap Rows and Columns"** icon, as shown below.
 
 ![][40]
 
-[40]: swap-rows-and-columns.png
+[40]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/swap-rows-and-columns.png
 
 <br>
 
@@ -443,7 +443,7 @@ Now head back to your dashboard. The column chart fits much better on the right-
 
 ![][41]
 
-[41]: dashboard-resize-tiles.png
+[41]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-resize-tiles.png
 
 <br>
 
