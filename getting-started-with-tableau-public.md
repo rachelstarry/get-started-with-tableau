@@ -269,7 +269,7 @@ Now let's create another visualization. At the bottom of the Tableau window, cli
 
 ### 4.1 - Create a line chart
 
-Now that we have a map that visualizes the total CO2 emissions across the globe, we might want to create a chart that visualizes how the amount of CO2 emissions per capita changed across time. Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can create with particular kinds of data. To do this, Ctrl + click on the dimensions and measures you want to add to the chart - in this case, Ctrl + click on both **"Year"** under Dimensions and **"CO2 per capita"** under Measures. In the **Show Me** toolbar, charts that you can make with these two fields will be highlighted. Click on the picture of the **line chart** in the Show Me toolbar, and Tableau will generate a chart with the data from the selected fields.
+Now that we have a map that visualizes the total CO2 emissions across the globe, we might want to create a chart that visualizes how the amount of CO2 emissions per capita changed over time. Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can create with particular kinds of data. To do this, Ctrl + click on the dimensions and measures you want to add to the chart - in this case, Ctrl + click on both **"Year"** under Dimensions and **"CO2 per capita"** under Measures. In the **Show Me** toolbar, charts that you can make with these two fields will be highlighted. Click on the picture of the **line chart** in the Show Me toolbar, and Tableau will generate a chart with the data from the selected fields.
 
 ![][25]
 
@@ -285,7 +285,7 @@ When we selected "Year" and "CO2 per capita" to create the line chart, Tableau a
 
 [26]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/country-detail.png
 
-While we could leave the chart like this and color-code the lines by country, our dataset includes information on region for each country. Since there are fewer regions than countries, using one of our region dimensions may make the line chart more readable. Let's remove "Country" by clicking on the arrow next to **"Country"** in the **Marks** pane.
+We could leave the chart like this and color-code the lines by country, but remember that our dataset also includes information on region for each country. Since there are fewer regions than countries, using one of our region dimensions may make the line chart more readable. Let's remove "Country" by clicking on the arrow next to **"Country"** in the **Marks** pane.
 
 ![][27]
 
@@ -309,15 +309,21 @@ Once you've added regions to the chart, you can continue to customize the size a
 
 ------
 
-## 5. Create a dashboard with multiple charts
+## 5. Create one last chart
+
+### 5.0 - ...
 
 ------
 
-## 6. Add interactivity and format your dashboard
+## 6. Create a dashboard with multiple charts
 
 ------
 
-## 7. Export and share your visualizations
+## 7. Add interactivity and format your dashboard
+
+------
+
+## 8. Export and share your visualizations
 
 
 
