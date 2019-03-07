@@ -123,7 +123,7 @@ Because Tableau *connects* to data files instead of directly opening them, when 
 
 ### 2.0 - Connect to the joined dataset
 
-You should now be back on the Tableau Public home screen. (If you aren't, go up to **File** in the navigation menu and click **"Show Start Page"**.) This time, instead of opening Excel files, we will need to open a csv (or comma separated values) file. This is a kind of text file, so select **"Text file"** and open the **"joined_co2_geography.csv"** that you created earlier.
+You should now be back on the Tableau Public home screen. (If you aren't, go up to **File** in the navigation menu and click **"Show Start Page"**.) This time, instead of opening Excel files, we will need to open a csv (or comma separated values) file. This is a kind of text file, so select **"Text file"** and open the **joined_co2_geography.csv** that you created earlier.
 
 ![][13]
 
