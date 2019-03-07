@@ -291,7 +291,7 @@ Notice that again, by default, Tableau assumes that we want to visualize the SUM
 
 ![][27]
 
-[27]: change-measure-to-attribute.png
+[27]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/change-measure-to-attribute.png
 
 <br>
 
@@ -303,7 +303,7 @@ To make the colors of our line chart match the map, click on **Color** in the **
 
 ![][28]
 
-[28]: full-color-range.png
+[28]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/full-color-range.png
 
 <br>
 
@@ -327,7 +327,7 @@ The image below shows the finished visualization.
 
 ![][29]
 
-[29]: full-color-range.png
+[29]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/finished-bar-chart.png
 
 ------
 
