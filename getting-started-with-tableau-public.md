@@ -135,7 +135,7 @@ You should now be back on the Tableau Public home screen. (If you aren't, go up 
 
 ### 2.1 - Dimensions and measures
 
-Tableau should recognize that the column headers are stored in the first row of our dataset, but if not, repeat **Step 1.1** as described above. At the bottom of the left sidebar, you should see a summary of all the pages you have open in your current Tableau Public workbook. Right now, you should just see **Data Source** and **Sheet 1**. Click over to **Sheet 1** now.
+Tableau should recognize that the column headers are stored in the first row of our dataset, but if not, repeat [**Step 1.1**](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#11---add-column-names) as described above. At the bottom of the left sidebar, you should see a summary of all the pages you have open in your current Tableau Public workbook. Right now, you should just see **Data Source** and **Sheet 1**. Click over to **Sheet 1** now.
 
 ![][14]
 
@@ -299,7 +299,7 @@ Notice that again, by default, Tableau assumes that we want to visualize the SUM
 
 Since both the map and the line chart visualize CO2 emission values, we may want to use the same color palette for both. Tell Tableau to color-code the lines according to each country's CO2 emissions, by dragging **"CO2 per capita"** from **Measures** to the **Color** box on the **Marks** pane, or directly onto the line chart canvas. Tableau will now use this measure to color the lines on the chart. Again, while it won't affect this particular chart, if you want to visualize actual values rather than a SUM or another calculation, you'll also need to change this for the color detail of **"CO2 per capita"** in the **Marks** pane.
 
-To make the colors of our line chart match the map, click on **Color** in the **Marks** pane and edit the color palette, selecting the **Temperature Diverging** palette we used for the map, as in **Step 3.2** above. To ensure that Tableau uses the full color range from green to red, in the **Edit Colors** pop-up window, check the box that says **"Use Full Color Range"**.
+To make the colors of our line chart match the map, click on **Color** in the **Marks** pane and edit the color palette, selecting the **Temperature Diverging** palette we used for the map, as in [**Step 3.2**](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#32---edit-dot-color) above. To ensure that Tableau uses the full color range from green to red, in the **Edit Colors** pop-up window, check the box that says **"Use Full Color Range"**.
 
 ![][28]
 
@@ -309,7 +309,7 @@ To make the colors of our line chart match the map, click on **Color** in the **
 
 ### 4.4 - Finish customizing the line chart
 
-Finish customizing your line chart by renaming the sheet and the chart title, as in **Step 2.6** and **Step 3.3** above.
+Finish customizing your line chart by renaming the sheet and the chart title, as in [**Step 2.6**](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#26---give-the-sheet-a-name) and [**Step 3.3**](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#33---change-the-chart-title) above.
 
 <br>
 
@@ -319,9 +319,17 @@ Finish customizing your line chart by renaming the sheet and the chart title, as
 
 ### 5.0 - Create a bar chart
 
-Now that we've walked through creating visualizations in two different ways - by dragging and dropping dimensions or measures directly onto a blank canvas (**Step 2.4**) and by using the **Show Me** toolbar (**Step 4.1**) - it's your turn to experiment! Start by creating a new worksheet. This time, we want to create a **stacked bar chart** that visualizes the **total CO2 emissions per capita** for each of the **World bank regions**, colored by all the countries in each region.
+Now that we've walked through creating visualizations in two different ways - by dragging and dropping dimensions or measures directly onto a blank canvas ([**Step 2.4**][step24]) and by using the **Show Me** toolbar ([**Step 4.1**][step41]) - it's your turn to experiment! 
 
-Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color using the Marks pane earlier (in **Step 3.2** and **Step 4.3**). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#steps-to-create-the-bar-chart-for-step-50)
+[step24]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#24---make-a-map
+[step41]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#41---create-a-line-chart
+
+Start by creating a new worksheet. This time, we want to create a **stacked bar chart** that visualizes the **total CO2 emissions per capita** for each of the **World bank regions**, colored by all the countries in each region.
+
+Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color/details using the Marks pane earlier (in [**Step 3.2**][step32] and [**Step 4.3**][step43]). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#steps-to-create-the-bar-chart-for-step-50)
+
+[step32]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#32---edit-dot-color
+[step43]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#43---edit-the-line-colors
 
 The image below shows the finished visualization.
 
