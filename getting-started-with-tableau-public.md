@@ -326,7 +326,7 @@ Now that we've walked through creating visualizations in two different ways - by
 
 Start by creating a new worksheet. This time, we want to create a **stacked bar chart** that visualizes the **total CO2 emissions per capita** for each of the **World bank regions**, colored by all the countries in each region.
 
-Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color/details using the Marks pane earlier (in [**Step 3.2**][step32] and [**Step 4.3**][step43]). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#steps-to-create-the-bar-chart-for-step-50)
+Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color/details using the Marks pane earlier (in [**Step 3.2**][step32] and [**Step 4.3**][step43]). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#how-to-create-the-bar-chart-for-step-50)
 
 [step32]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#32---edit-dot-color
 [step43]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#43---edit-the-line-colors
@@ -337,13 +337,121 @@ The image below shows the finished visualization.
 
 [29]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/finished-bar-chart.png
 
+<br>
+
 ------
 
-## 6. Create a dashboard with multiple charts
+## 6. Create a dashboard
+
+### 6.0 - Create a new dashboard
+
+A dashboard in Tableau is a kind of snapshot of multiple visualizations, allowing you to create custom infographics with your visualizations right in Tableau Public. You can customize dashboards by adding text, images, video - even webpages! - as well as various kinds of interactivity. 
+
+Start by clicking the **New Dashboard** button at the bottom of the Tableau window.
+
+![][30]
+
+[30]: new-dashboard.png
+
+<br>
+
+### 6.1 - Resize your dashboard
+
+The first thing you'll want to do when creating a dashboard is decide whether you want it to be a fixed size - the default setting - or whether you want it to resize automatically to fit any screen it is displayed on. In this instance, we want our dashboard to resize automatically. On the left sidebar of your dashboard, under **Size**, click the arrow to open a drop-down menu with a few size options. This opens a window that allows you to choose a custom size for your dashboard; next to **Range**, click the arrow and select **"Automatic"**.
+
+![][31]
+
+[31]: resize-automatic.png
+
+<br>
+
+### 6.2 - Add a visualization to your dashboard
+
+Notice that below **Size** on the left sidebar is a section called **Sheets**. You should see a list of all the visualizations you created earlier, including Map, Line Chart, and Bar Chart. Adding visualizations to the dashboard is as easy as dragging and dropping your sheets onto the canvas.
+
+Try it now by dragging **Map** to the blank canvas. Tableau automatically fills the canvas with your map visualization and adds the map legends to the far right side of the dashboard. Your dashboard should look like the image below.
+
+![][32]
+
+[32]: dashboard-map-only.png
+
+<br>
+
+### 6.3 - Add additional visualizations to your dashboard
+
+We also want to add the line chart to this dashboard. If you click and drag **Line Chart** onto the canvas, Tableau will highlight in grey different sections of the canvas where you can add the line chart. We want it to appear below our map, so move your cursor to the lower half of the canvas until that part of the dashboard is highlighted, then release your cursor.
+
+![][33]
+
+[33]: dashboard-add-line-chart.png
+
+The line chart should now appear in the lower half of the dashboard, and its legend has also been added to the right-hand side of the dashboard, under the map legends.
+
+![][34]
+
+[34]: dashboard-map-line-chart.png
+
+<br>
+
+### 6.4 - Edit dashboard legends
+
+The legends for the map don't add much in terms of readability, so we can remove them from the dashboard. If you click on the uppermost legend (all are called **"CO2 per capita"** but the topmost one should show the map bubble sizes), you should see an **X** and some other manipulation tools appear on the legend. Click the **X** to remove the legend from the dashboard.
+
+![][35]
+
+[35]: dashboard-remove-legend.png
+
+Do the same for the other map legend (the **"CO2 per capita"** legend whose scale reads 0 to 2985). We should keep the legend for the line chart, however, since we will want users to be able to see the range of total CO2 emissions for each country when they interact with the line chart. It is possible to move legends around by making them **floating legends**. Do this by clicking on the **"More Options"** arrow that appears next to the legend after you've clicked on it, and selecting **"Floating"**. 
+
+![][36]
+
+[36]: dashboard-legend-options.png
+
+Now you can use the grey bar that appears on top of the legend to move it around your dashboard. Move it down so it appears closer to the line chart, as shown below.
+
+![][37]
+
+[37]: dashboard-with-legend.png
+
+<br>
+
+### 6.5 - Add and edit bar chart
+
+Now let's add the bar chart to the right half of the dashboard. Click and drag **Bar Chart** until Tableau highlights with grey the entire right half of the dashboard, as shown below.
+
+![][38]
+
+[38]: dashboard-add-bar-chart.png
+
+Tableau will add the bar chart as well as its legend to the right side of the dashboard. Move the **"CO2 per capita"** legend so it's on top of the line chart again, and remove the **"Country"** legend for the bar chart, since we don't need to include that in the dashboard (users can hover over the bar chart to see country information).
+
+![][39]
+
+[39]: dashboard-bar-chart-legends.png
+
+Since the bar chart has horizontal bars, there is a lot of wasted space below it on the dashboard. Tableau makes it easy to turn horizontal bar charts into vertical column charts by swapping the rows and columns. To do this, switch back to the **Bar Chart** worksheet. Under the navigation menu is a toolbar with lots of icons. You'll want to click the **"Swap Rows and Columns"** icon, as shown below.
+
+![][40]
+
+[40]: swap-rows-and-columns.png
+
+<br>
+
+### 6.6 - Resize dashboard tiles
+
+Now head back to your dashboard. The column chart fits much better on the right-hand side of the dashboard! You can eliminate the rest of the empty space by hovering over the borders between the visualizations on the dashboard until the double-arrow cursor appears. Then click and drag to resize your bar chart so there is no extra white-space in the dashboard.
+
+![][41]
+
+[41]: dashboard-resize-tiles.png
+
+<br>
 
 ------
 
 ## 7. Add interactivity and format your dashboard
+
+### 7.1 - 
 
 ------
 
@@ -354,22 +462,19 @@ The image below shows the finished visualization.
 
 ------
 
-#### Steps to create the bar chart for **Step 5.0**:
+#### How to create the bar chart for Step 5.0:
 
-* 
+1. Ctrl + click to select both **"World bank region"** under Dimensions and **"CO2 per capita"** under Measures, and select the recommended bar chart in the **Show me** toolbar.
+2. Drag **"Country"** from under Dimensions to the bar chart canvas or to the **Details** box on the **Marks** pane.
+3. Drag **"Country"** from under Dimensions to the **Color** box on the **Marks** pane.
+4. Rename the sheet to **"Bar Chart"** and rename the chart title to **"Total CO2 emissions by world region"**. 
 
 
 
 
 
 
-## 14. Create a dashboard
 
-Now we'll combine our charts to create a **dashboard** -- a snapshot of multiple visualizations. Do that by clicking on the **Dashboard** button, circled below.
-
-![][14]
-
-[14]: images/getting-started-with-tableau-public/create-a-dashboard.png
 
 ## 15. Drag your sheets onto your dashboard
 
