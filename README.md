@@ -10,5 +10,5 @@ The template for this tutorial was adapted from "Get Started with Tableau", crea
 4. [Create another chart](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#4-create-another-chart)
 5. [Create a bar chart](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#4-create-another-chart)
 6. [Create a dashboard](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#6-create-a-dashboard)
-7. 
-8.
+7. [Add interactivity and format your dashboard](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#7-add-interactivity-and-format-your-dashboard)
+8. [Export and share your visualizations](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#8-export-and-share-your-visualizations)

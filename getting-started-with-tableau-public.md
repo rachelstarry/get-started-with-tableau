@@ -16,6 +16,19 @@ We will use Tableau Public to make several charts, which we will combine into a 
 
 ------
 
+# Table of Contents
+
+1. [Import and prepare your data](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#1-import-and-prepare-your-data)
+2. [Create your first visualization](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#2-create-your-first-visualization)
+3. [Customize your visualization](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#3-customize-your-visualization)
+4. [Create another chart](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#4-create-another-chart)
+5. [Create a bar chart](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#4-create-another-chart)
+6. [Create a dashboard](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#6-create-a-dashboard)
+7. [Add interactivity and format your dashboard](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#7-add-interactivity-and-format-your-dashboard)
+8. [Export and share your visualizations](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#8-export-and-share-your-visualizations)
+
+------
+
 ## 1. Import and prepare your data
 
 After opening Tableau, you're presented with a list of file types you can choose to work with ("Connect"). Both of our data files are .xlsx files, so select **Microsoft Excel.** Then navigate to the file named **en_atm_co2e_pc.xlsx** you downloaded earlier and double-click to open it.
