@@ -82,6 +82,10 @@ Then, under "Data Source," scroll down to select **country** and under "list-of-
 
 <br>
 
+[Read more about joining datasets in Tableau here.](https://onlinehelp.tableau.com/current/pro/desktop/en-us/joining_tables.htm)
+
+<br>
+
 ### 1.4 - Pivot the year columns
 
 In the lower pane of the Data Source window, you should now see a preview of our newly joined dataset! Use the scroll bars to see all of the columns in this new spreadsheet. In order to create visualizations of this data, we will need all of the year columns to be stacked or collapsed from "wide" to "long" format. To do this, click on the **1960** column and then scroll over and Shift + click on the **2014** column to select all of the year columns. Next, click the arrow at the top of the **2014** column and select **"Pivot"**. 
@@ -139,11 +143,15 @@ Tableau should recognize that the column headers are stored in the first row of 
 
 [14]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/open-csv-sheet1.png
 
+<br>
+
 Tableau divides the fields in your dataset (that is, your columns) into **dimensions** and **measures**. Measures are fields whose values *measure* some attribute of your data (these are always numeric), while dimensions are fields whose values *describe* some attribute of your data (these can be categories, geographical or temporal scales, or other types of variables that do not measure a quantity).
 
 ![][15]
 
 [15]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dimensions-measures.png
+
+<br>
 
 In our dataset, we have **10 dimensions** and **3 measures** present in our actual spreadsheet, and Tableau has also calculated a few additional dimensions (such as "Measure Names") and additional measures (such as "Number of Records" and "Measure Values"). These automatically calculated dimensions and measures are distinguished by their italicized names.
 
@@ -180,7 +188,6 @@ A dot is added to the map for each country in our dataset. This isn't very helpf
 ![][16b]
 
 [16b]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/map-sized.png
-
 
 <br>
 
@@ -227,6 +234,8 @@ We can also change the color of the dots on the map to reflect the intensity of 
 
 [20]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/marks-color.png
 
+<br>
+
 To the right of the canvas, Tableau displays the legends for your visualization. You may have to minimize the **"Show Me"** toolbar (at the top right corner of the Tableau window) in order to see the legends. A legend was added for the size of the dots, and now there is also a legend for the color scale. We can customize this color scale by clicking on **Color** inside the **Marks** pane. Select **"Edit Colors..."** to select a different color scale. In the pop-up window, scroll down to select the **"Temperature Diverging"** color palette, and click OK. You may also want to make the dots on the map slightly transparent since at some zoom levels, the dots overlap each other. (In the example shown, **80% opacity** has been selected.)
 
 ![][21]
@@ -242,6 +251,8 @@ While "Map" is a useful name for our sheet, you may want to have a more descript
 ![][22]
 
 [22]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/chart-title-edit.png
+
+<br>
 
 In the pop-up window, give your map a new title and click OK.
 
@@ -284,6 +295,8 @@ When we selected "Year" and "CO2 per capita" to create the line chart, Tableau a
 ![][26]
 
 [26]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/country-detail.png
+
+<br>
 
 Notice that again, by default, Tableau assumes that we want to visualize the SUM of CO2 emissions, but since each line represents a single country's values over time, there is no need to add values together. What we really want is for Tableau to simply use the **"CO2 per capita"** values themselves. To do this, click on the arrow next to **"CO2 per capita"** in the **Rows** pane above the canvas, and select **"Attribute"** instead of "Measure(SUM)". While in this instance, this change doesn't make a difference in the way our line chart is drawn, for other datasets you will often want to visualize a measure directly, rather than performing a calculation on it first.
 
@@ -381,6 +394,8 @@ We also want to add the line chart to this dashboard. If you click and drag **Li
 
 [33]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-add-line-chart.png
 
+<br>
+
 The line chart should now appear in the lower half of the dashboard, and its legend has also been added to the right-hand side of the dashboard, under the map legends.
 
 ![][34]
@@ -397,11 +412,15 @@ The legends for the map don't add much in terms of readability, so we can remove
 
 [35]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-remove-legend.png
 
+<br>
+
 Do the same for the other map legend (the **"CO2 per capita"** legend whose scale reads 0 to 2985). We should keep the legend for the line chart, however, since we will want users to be able to see the range of total CO2 emissions for each country when they interact with the line chart. It is possible to move legends around by making them **floating legends**. Do this by clicking on the **"More Options"** arrow that appears next to the legend after you've clicked on it, and selecting **"Floating"**. 
 
 ![][36]
 
 [36]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-legend-options.png
+
+<br>
 
 Now you can use the grey bar that appears on top of the legend to move it around your dashboard. Move it down so it appears closer to the line chart, as shown below.
 
@@ -419,11 +438,15 @@ Now let's add the bar chart to the right half of the dashboard. Click and drag *
 
 [38]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-add-bar-chart.png
 
+<br>
+
 Tableau will add the bar chart as well as its legend to the right side of the dashboard. Move the **"CO2 per capita"** legend so it's on top of the line chart again, and remove the **"Country"** legend for the bar chart, since we don't need to include that in the dashboard (users can hover over the bar chart to see country information).
 
 ![][39]
 
 [39]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/dashboard-bar-chart-legends.png
+
+<br>
 
 Since the bar chart has horizontal bars, there is a lot of wasted space below it on the dashboard. Tableau makes it easy to turn horizontal bar charts into vertical column charts by swapping the rows and columns. To do this, switch back to the **Bar Chart** worksheet. Under the navigation menu is a toolbar with lots of icons. You'll want to click the **"Swap Rows and Columns"** icon, as shown below.
 
@@ -477,6 +500,8 @@ You may notice that as you click on different countries on the map, whenever the
 
 [44]: edit-axis.png
 
+<br>
+
 In the pop-up window that appears, under **"Range"** select **"Fixed"** and then close out of the pop-up window (you do not need to click anywhere else to save this setting). Now when the line chart is re-drawn to display different countries' CO2 emissions, the Y axis will remain at the original scale.
 
 ![][45]
@@ -494,6 +519,8 @@ For now, we can make our dashboard slightly more readable by adding a tiny bit o
 ![][46]
 
 [46]: add-blank.png
+
+<br>
 
 You can also add a blank area between the bar chart and the two charts on the left side of the dashboard. These blank areas help visually separate each of the charts in our dashboard. 
 
@@ -515,9 +542,11 @@ To save and share your visualizations or dashboard, you will need to have a Tabl
 
 [48]: save-as.png
 
+<br>
+
 If you have not already created an account or logged into Tableau, you will be prompted to begin this process when you select **Save**. You can choose whether or not to make your workbooks publicly visible. [Follow the instructions in this article][save] if you would like to learn how to make your visualizations private or save workbooks locally to your computer.
 
-There's a *ton* more you can do with Tableau. You can begin learning about its other features [here](https://public.tableau.com/en-us/s/resources)!
+There's a *lot* more you can do with Tableau. You can [begin learning about its other features here](https://public.tableau.com/en-us/s/resources)!
 
 [save]: https://www.olgatsubiks.com/single-post/2017/03/20/How-to-save-Tableau-Public-workbooks-privately-on-your-computer
 
