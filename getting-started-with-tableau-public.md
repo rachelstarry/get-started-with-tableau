@@ -551,7 +551,7 @@ Go ahead and add a chart title as well! At the very bottom of the left sidebar, 
 
 ### 7.4 - Add data citation
 
-Whenever you create visualizations or dashboards, it's important to cite the datasets you used. To add a citation to your dashboard, drag a **Text** object from under **Objects** on the left sidebar to the very bottom of your dashboard. A window will appear where you can add text. Copy and paste the text from below into the box, and then click the red **X** to remove formatting from the text (this will apply the default Tableau formatting to the text).
+Whenever you create visualizations or dashboards, it's important to cite the datasets you used. To add a citation to your dashboard, drag a **Text** object from under **Objects** on the left sidebar to the very bottom of your dashboard. A window will appear where you can add text. Copy and paste the text from below into the box, and then click the red **X** to remove formatting from the text (this will apply the default Tableau formatting to the text). You can then resize your text box so that it takes up a minimum of space at the bottom of your dashboard.
 
 "Data source: "CO2 emissions (metric tons per capita),” Carbon Dioxide Information Analysis Center, Environmental Sciences Division, Oak Ridge National Laboratory, Tennessee, United States, retrieved from Gapminder Tools data (https://www.gapminder.org/data/). Additional geography data retrieved from https://www.gapminder.org/data/geo/."
 
@@ -568,9 +568,9 @@ Whenever you create visualizations or dashboards, it's important to cite the dat
 
 To save and share your visualizations or dashboard, you will need to have a Tableau account so that you can save your workbook to your public Tableau profile. To publish your workbook, make sure you have your dashboard open (or whichever sheet or dashboard you want to be visible when someone views your workbook), and in the navigation menu select **"File"** --> **"Save to Tableau Public As..."**. Give your workbook a name, and click **Save**. A browser window should open automatically and take you to the public view of your workbook.
 
-![][48]
+![][49]
 
-[48]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/save-as.png
+[49]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/save-as.png
 
 <br>
 
