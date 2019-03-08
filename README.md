@@ -4,7 +4,7 @@ The template for this tutorial was adapted from "Get Started with Tableau", crea
 
 # Tutorial Table of Contents
 
-##[Getting Started with Tableau](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md)
+## [Getting Started with Tableau](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md)
 
 1. [Import and prepare your data](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#1-import-and-prepare-your-data)
 2. [Create your first visualization](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#2-create-your-first-visualization)
