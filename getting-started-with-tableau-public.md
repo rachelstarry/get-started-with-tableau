@@ -476,7 +476,7 @@ The dashboard is already looking pretty good! We can add to its interactivity by
 
 ![][42]
 
-[42]: map-as-filter.png
+[42]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/map-as-filter.png
 
 <br>
 
@@ -488,7 +488,7 @@ While we want the line chart to update, we don't necessarily want the stacked ba
 
 ![][43]
 
-[43]: ignore-actions.png
+[43]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/ignore-actions.png
 
 <br>
 
@@ -498,7 +498,7 @@ You may notice that as you click on different countries on the map, whenever the
 
 ![][44]
 
-[44]: edit-axis.png
+[44]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/edit-axis.png
 
 <br>
 
@@ -506,7 +506,7 @@ In the pop-up window that appears, under **"Range"** select **"Fixed"** and then
 
 ![][45]
 
-[45]: edit-axis-fixed.png
+[45]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/edit-axis-fixed.png
 
 <br>
 
@@ -518,7 +518,7 @@ For now, we can make our dashboard slightly more readable by adding a tiny bit o
 
 ![][46]
 
-[46]: add-blank.png
+[46]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/add-blank.png
 
 <br>
 
@@ -528,7 +528,7 @@ Go ahead and add a chart title as well! At the very bottom of the left sidebar, 
 
 ![][47]
 
-[47]: add-title.png
+[47]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/add-title.png
 
 <br>
 
@@ -540,7 +540,7 @@ To save and share your visualizations or dashboard, you will need to have a Tabl
 
 ![][48]
 
-[48]: save-as.png
+[48]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/save-as.png
 
 <br>
 
