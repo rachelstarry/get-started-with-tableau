@@ -7,7 +7,7 @@ Tableau Public is the free version of this tool; this tutorial was created using
 We will use Tableau Public to make several charts, which we will combine into a dashboard that can be shared with a link or embedded on a webpage. [Here is a preview of what we'll make.](https://public.tableau.com/profile/rachel.starry#!/vizhome/GettingStartedGuide/GlobalCO2Emissionspercapita) At the end of this tutorial, you'll find information on how to publish your Tableau workbook to the web. For this exercise, you will need two data files, both from [Gapminder Tools](https://www.gapminder.org/). 
 
 * ![en_atm_co2e_pc.xlsx][1] (CO2 emissions in metric tons per capita)
-* ![DataGeographies_v1_byGapminder.xlsx][2] (additional data for the 195 countries in the Gapminder dataset)
+* ![DataGeographies_v1_byGapminder.xlsx][2] (additional data for the 191 countries in the Gapminder dataset)
 
 [1]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/en_atm_co2e_pc.xlsx
 [2]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/data/DataGeographies_v1_byGapminder.xlsx
