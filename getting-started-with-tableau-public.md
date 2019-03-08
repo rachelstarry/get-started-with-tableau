@@ -549,6 +549,19 @@ Go ahead and add a chart title as well! At the very bottom of the left sidebar, 
 
 <br>
 
+### 7.4 - Add data citation
+
+Whenever you create visualizations or dashboards, it's important to cite the datasets you used. To add a citation to your dashboard, drag a **Text** object from under **Objects** on the left sidebar to the very bottom of your dashboard. A window will appear where you can add text. Copy and paste the text from below into the box, and then click the red **X** to remove formatting from the text (this will apply the default Tableau formatting to the text).
+
+"Data source: "CO2 emissions (metric tons per capita),” Carbon Dioxide Information Analysis Center, Environmental Sciences Division, Oak Ridge National Laboratory, Tennessee, United States, retrieved from Gapminder Tools data (https://www.gapminder.org/data/). Additional geography data retrieved from https://www.gapminder.org/data/geo/."
+
+
+![][48]
+
+[48]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/images/data-citation.png
+
+<br>
+
 ------
 
 ## 8. Export and share your visualizations
