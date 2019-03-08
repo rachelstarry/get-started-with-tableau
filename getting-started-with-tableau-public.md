@@ -27,6 +27,8 @@ We will use Tableau Public to make several charts, which we will combine into a 
 7. [Add interactivity and format your dashboard](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#7-add-interactivity-and-format-your-dashboard)
 8. [Export and share your visualizations](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#8-export-and-share-your-visualizations)
 
+<br>
+
 ------
 
 ## 1. Import and prepare your data
@@ -172,7 +174,7 @@ In our dataset, we have **10 dimensions** and **3 measures** present in our actu
 
 ### 2.2 - Discrete and continuous data
 
-You may notice that most of our dimensions are coded in Tableau as blue - their icons are blue and a blue bubble appears around the names of the dimensions. Most of the measures, however, are green. This is because Tableau indicates **discrete data** using the color blue and **continuous data** using the color green. Discrete (also known as categorical or qualitative) data has values that are divided into discrete categories or classes, whereas continuous (also known as sequential or continuously varying) data has values that can be found anywhere within a range of possible values, such as the numbers from zero to a million.
+You may notice that most of our dimensions are coded in Tableau as blue - their icons are blue and a blue bubble appears around the names of the dimensions. All of our measures, however, are green. This is because Tableau indicates **discrete data** using the color blue and **continuous data** using the color green. Discrete (also known as categorical or qualitative) data has values that are divided into discrete categories or classes, whereas continuous (also known as sequential or continuously varying) data has values that can be found anywhere within a range of possible values, such as the numbers from zero to a million.
 
 While **most dimensions are discrete** and **most measures are continuous**, this may not be the case 100% of the time. In our dataset, the Year column, which is a dimension, is green because the Year values fall into a numeric range (in this case, between 1960 and 2014).
 
@@ -180,7 +182,7 @@ While **most dimensions are discrete** and **most measures are continuous**, thi
 
 ### 2.3 - Data types
 
-You may also notice that there are a variety of symbols next to each of our dimensions and measures. The **globe** symbol next to "Country," as well as "Latitude" and "Longitude," indicates spatial data, and the pound sign **#** next to "Year" and "CO2 per capita" represents numeric data. There are additional types of data, such as text (represented by **"Abc"**) and date (represented by a **calendar** symbol).
+You may also notice that there are a variety of symbols next to each of our dimensions and measures. The **globe** symbol next to "Country," as well as "Latitude" and "Longitude," indicates spatial data, and the pound sign (**#**) next to "Year" and "CO2 per capita" represents numeric data. There are additional types of data, such as text (represented by **"Abc"**) and date (represented by a **calendar** symbol).
 
 <br>
 
@@ -291,9 +293,9 @@ Now let's create another visualization. At the bottom of the Tableau window, cli
 
 ### 4.1 - Create a line chart
 
-Now that we have created a map that visualizes the total CO2 emissions across the globe, we might want to create a chart to complement our map that visualizes how the amount of CO2 emissions per capita changed over time. 
+Now that we have created a map that visualizes the total CO2 emissions across the globe, we might want to create a chart to complement our map that addresses the question: "how has the amount of CO2 emissions per capita changed over time?"
 
-Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can create with particular kinds of data. To do this, Ctrl + click on the dimensions and measures you want to add to the chart - in this case, Ctrl + click on both **"Year"** under Dimensions and **"CO2 per capita"** under Measures. In the **Show Me** toolbar, charts that you can make with these two fields will be highlighted. Click on the picture of the **line chart** in the Show Me toolbar, and Tableau will generate a chart with the data from the selected fields.
+Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can create with particular kinds of data. To do this, Ctrl + click on the dimensions and measures you want to add to the chart - in this case, Ctrl + click on both **"Year"** under Dimensions and **"CO2 per capita"** under Measures, since these are the two fields that will let us visualize the change in CO2 emissions over time. In the **Show Me** toolbar, charts that you can make with these two fields will be highlighted. Click on the picture of the **line chart** in the Show Me toolbar, and Tableau will generate a chart with the data from the selected fields.
 
 ![][25]
 
@@ -303,7 +305,9 @@ Tableau's **"Show Me"** tool bar allows you to see what kinds of charts you can 
 
 ### 4.2 - Add a detail to the line chart
 
-When we selected "Year" and "CO2 per capita" to create the line chart, Tableau again automatically performed a SUM calculation to display the total CO2 emissions per year for all countries. If we want to see the breakdown of individual countries' CO2 emissions, we can drag the **"Country"** field from Dimensions onto the line chart. Now, in the **Marks** pane, "Country" appears as a **detail** in the line chart, and a line for each country's emissions appears on the chart. 
+Notice that when we selected "Year" and "CO2 per capita" to create the line chart, Tableau again automatically performed a SUM calculation to display the total CO2 emissions per year for all countries. 
+
+If we want to see the breakdown of individual countries' CO2 emissions, we can drag the **"Country"** field from Dimensions onto the line chart. Now, in the **Marks** pane, "Country" appears as a **detail** in the line chart, and a line for each country's emissions appears on the chart. 
 
 ![][26]
 
@@ -348,7 +352,7 @@ Now that we've walked through creating visualizations in two different ways - by
 
 Start by creating a new worksheet. This time, we want to create a **stacked bar chart** that visualizes the **total CO2 emissions per capita** for each of the **World bank regions**, colored by all the countries in each region.
 
-Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color/details using the Marks pane earlier (in [**Step 3.2**][step32] and [**Step 4.3**][step43]). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#how-to-create-the-bar-chart-for-step-50)
+Hint: Start by adding the two primary dimensions/measures to the map that you want to visualize. Then think about how we added color/details using the Marks pane earlier (in [**Step 3.2**][step32] and [**Step 4.3**][step43]). Take some time to experiment, but if you get stuck, you can read specific instructions on how to create this chart [by clicking here.](https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#how-to-create-the-bar-chart-for-step-5)
 
 [step32]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#32---edit-dot-color
 [step43]: https://github.com/rachelstarry/getting-started-with-tableau/blob/master/getting-started-with-tableau-public.md#43---edit-the-line-colors
@@ -567,7 +571,7 @@ There's a *lot* more you can do with Tableau. You can [begin learning about its 
 
 ------
 
-#### How to create the bar chart for Step 5.0:
+#### How to create the bar chart for Step 5:
 
 1. Ctrl + click to select both **"World bank region"** under Dimensions and **"CO2 per capita"** under Measures, and select the recommended bar chart in the **Show me** toolbar.
 2. Drag **"Country"** from under Dimensions to the bar chart canvas or to the **Details** box on the **Marks** pane.
